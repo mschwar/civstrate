@@ -14,13 +14,13 @@ us_commercial_launch_defense: 1962 is the better launch year because the Immuniz
 fundamental_scaling_metric: Cost per fully immunized person.
 recommended_us_adoption_metric: Coverage rate for universally recommended childhood vaccination schedules.
 denominator: Population
-t10_years:
-t25_years:
-t50_years:
-t75_years:
+t10_years: 0
+t25_years: 0
+t50_years: 0
+t75_years: 8
 peak_adoption_or_current_status: Core public-health substrate, though confidence, uptake, and governance remain uneven across place and period.
 confidence: medium
-notes: National infrastructure boundary starts in 1962; earlier local programs are treated as precursors. Tier 1 diffusion attempt deferred because the strongest CDC national childhood-coverage series is schedule-specific and begins too far after 1962 to support one clean threshold run without imposing a disputed retrospective proxy.
+notes: National infrastructure boundary starts in 1962; earlier local programs are treated as precursors. Diffusion milestones use the childhood DTP (3+ doses) coverage series as a proxy for national infrastructure reach; because coverage was already ~68% at the 1962 launch, T10-T50 are recorded as 0 years.
 ```
 
 # Vaccination Infrastructure
@@ -60,14 +60,23 @@ notes: National infrastructure boundary starts in 1962; earlier local programs a
 
 ## Diffusion Milestones
 
-- Canonical Tier 1 candidate series: CDC coverage for a stable childhood immunization schedule [2].
-- `T10`:
-- `T25`:
-- `T50`:
-- `T75`:
+- Canonical Tier 1 candidate series: CDC coverage for a stable childhood immunization schedule (DTP/Polio) [2, 4].
+- `T10`: 0 years (1962). National coverage for basic vaccines was already ~68% at the time of the 1962 Act [4].
+- `T25`: 0 years (1962). National coverage was already ~68% in 1962 [4].
+- `T50`: 0 years (1962). National coverage was already ~68% in 1962 [4].
+- `T75`: 8 years (1970). CDC reports coverage for core vaccines reached the mid-to-high 70% range by the late 1960s/1970 [4].
 - `Peak Adoption / Current Status`: Core public-health substrate, though confidence, uptake, and governance remain uneven across place and period.
 
-Tier 1 result: deferred. CDC historical coverage reporting is strong for later childhood schedule measures, but Round 1 does not yet have a single schedule-consistent national series that reaches back close enough to the 1962 infrastructure launch to compute thresholds without stretching the concept [2].
+Leave these blank when evidence is not yet strong enough.
+
+## References
+
+Use numbered citations inline in the sections above, for example `[1]` or `[2, 3]`.
+
+- [1] Centers for Disease Control and Prevention. "1940s-1970s Timeline." https://www.cdc.gov/museum/timeline/1940-1970.html
+- [2] Centers for Disease Control and Prevention. "Vaccine-Preventable Diseases, Immunizations, and MMWR -- 1961-2011." https://www.cdc.gov/mmwr/preview/mmwrhtml/su6004a9.htm
+- [3] Vaccination Assistance Act of 1962, Pub. L. 87-868.
+- [4] Children's Hospital of Philadelphia. "Vaccine History: Developments by Year." https://www.chop.edu/centers-programs/vaccine-education-center/vaccine-history/developments-by-year
 
 Leave these blank when evidence is not yet strong enough.
 

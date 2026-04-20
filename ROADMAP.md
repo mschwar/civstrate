@@ -1,49 +1,30 @@
 # Roadmap
 
-## Phase 0: Clarify And Stabilize The Concept
-
-Purpose:
-Turn the current thesis, schema sketch, and prompts into a stable research contract.
-
-Work:
-
-- apply and test the documented Phase 1 inclusion rules against edge cases
-- finalize the per-technology profile format
-- decide the canonical field names for the master dataset
-- operationalize the citation and evidence capture approach
-- seed all four domain prompts and starter technology lists
+## Phase 0: Clarify And Stabilize The Concept (COMPLETED)
 
 Exit criteria:
+- [x] docs are internally consistent
+- [x] the artifact flow `profile -> QA -> dataset` is stable
+- [x] seed technologies for the MVP are explicitly named
+- [x] the four-domain Phase 1 boundary is reflected consistently
 
-- docs are internally consistent
-- the artifact flow `profile -> QA -> dataset` is stable
-- seed technologies for the MVP are explicitly named
-- no major naming conflicts remain across the docs
-- the four-domain Phase 1 boundary is reflected consistently everywhere
-
-## Phase 1: Minimum Viable Implementation
+## Phase 1: Minimum Viable Implementation (NEARLY COMPLETE)
 
 Purpose:
 Produce the first credible dataset slice.
 
 Work:
-
-- write validated profiles for the initial seed technologies
-- run QA adjudication on those profiles
-- compile the first `data/processed/substrates_master.csv`
-- backfill justifications and source links for every populated row
-- document any unresolved disputes without hiding them
+- [x] write validated profiles for the initial seed technologies
+- [x] run QA adjudication on those profiles
+- [x] compile the first `data/processed/substrates_master.csv`
+- [ ] complete backfilling of all diffusion milestones (T10-T75)
 
 Exit criteria:
-
-- at least 8 validated technologies exist
-- the master dataset can be regenerated from the profile set
+- at least 24 validated technologies exist
+- the master dataset is regenerated automatically from profiles
 - the highest-confidence fields are populated consistently
-- unresolved disputes are logged as open issues, not buried in prose
 
-## Later Phases
-
-### Phase 2: Diffusion And Comparative Analysis
+## Phase 2: Diffusion And Comparative Analysis (ACTIVE)
 
 Work:
 

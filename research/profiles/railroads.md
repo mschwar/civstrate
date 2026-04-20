@@ -14,13 +14,13 @@ us_commercial_launch_defense: The same 1830 operating milestone also marks comme
 fundamental_scaling_metric: Cost per ton-mile.
 recommended_us_adoption_metric: U.S. railroad freight ton-miles, with route miles as an early diffusion proxy.
 denominator: Volume
-t10_years:
-t25_years:
-t50_years:
-t75_years:
+t10_years: 30
+t25_years: 50
+t50_years: 60
+t75_years: 70
 peak_adoption_or_current_status: Still critical for bulk freight, though no longer the dominant passenger substrate.
 confidence: medium
-notes: 1830 reflects U.S. common-carrier steam service rather than earlier prototypes or horse railways. Tier 1 diffusion attempt deferred because route miles are the clearest early national series, but Round 1 has not yet frozen whether thresholds should be normalized to peak route mileage, freight ton-miles, or another national exposure denominator.
+notes: 1830 reflects U.S. common-carrier steam service rather than earlier prototypes or horse railways. Diffusion milestones use the percentage of the 1916 peak U.S. railroad route mileage (254,037 miles) as the saturation denominator.
 ```
 
 # Railroads
@@ -60,14 +60,23 @@ notes: 1830 reflects U.S. common-carrier steam service rather than earlier proto
 
 ## Diffusion Milestones
 
-- Canonical Tier 1 candidate series: national route miles first, freight ton-miles second.
-- `T10`:
-- `T25`:
-- `T50`:
-- `T75`:
+- Canonical Tier 1 candidate series: percentage of peak U.S. railroad route mileage (1916 peak: 254,037 miles) [3, 4].
+- `T10`: 30 years (1860). Route miles reached 30,626 (12.1% of peak) by 1860 [3].
+- `T25`: 50 years (1880). Route miles reached 93,267 (36.7% of peak) by 1880 [3].
+- `T50`: 60 years (1890). Route miles reached 163,597 (64.4% of peak) by 1890 [3].
+- `T75`: 70 years (1900). Route miles reached 193,346 (76.1% of peak) by 1900 [3].
 - `Peak Adoption / Current Status`: Still critical for bulk freight, though no longer the dominant passenger substrate.
 
-Tier 1 result: deferred. The national route-mile series is tractable, but the milestone denominator is not yet frozen tightly enough to produce reproducible threshold years that would survive adjudication.
+Leave these blank when evidence is not yet strong enough.
+
+## References
+
+Use numbered citations inline in the sections above, for example `[1]` or `[2, 3]`.
+
+- [1] Federal Transit Administration. "History of NTD and Transit in the United States." https://www.transit.dot.gov/ntd/history-ntd-and-transit-united-states
+- [2] Chandler, Alfred D. *The Visible Hand: The Managerial Revolution in American Business*. Harvard University Press, 1977.
+- [3] Wikipedia. "History of rail transport in the United States." https://en.wikipedia.org/wiki/History_of_rail_transport_in_the_United_States
+- [4] Association of American Railroads. "Railroad Route Miles." https://www.aar.org/data-center/railroad-basics/
 
 Leave these blank when evidence is not yet strong enough.
 

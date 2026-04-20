@@ -12,7 +12,7 @@ invention_year_defense: 1946 is the strongest practical invention boundary for t
 us_commercial_launch_year: 1946
 us_commercial_launch_defense: 1946 is also the clearest U.S. public-deployment boundary because Hill-Burton immediately authorized grants to states for hospital and public health center construction rather than merely studying the problem.
 fundamental_scaling_metric: Cost per adjusted patient day or staffed bed-day delivered.
-recommended_us_adoption_metric: Community-hospital beds per 1,000 population, with staffed acute-care hospital admissions or discharges as supporting series.
+recommended_us_adoption_metric: Share of U.S. population with access to community hospital beds (per 1,000 population), with staffed acute-care hospital admissions or discharges as supporting series.
 denominator: Population
 t10_years:
 t25_years:

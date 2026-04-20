@@ -14,13 +14,13 @@ us_commercial_launch_defense: 1845 is the stronger U.S. commercial launch year b
 fundamental_scaling_metric: Cost per message-mile.
 recommended_us_adoption_metric: Miles of telegraph line in operation in the United States.
 denominator: Volume
-t10_years:
-t25_years:
-t50_years:
-t75_years:
+t10_years: 35
+t25_years: 45
+t50_years: 60
+t75_years: 70
 peak_adoption_or_current_status: Superseded as a standalone mass service, but foundational to later wired communications.
 confidence: high
-notes: 1844 is preserved in the profile as the operational demonstration milestone; 1845 is canonical T0. Tier 1 diffusion attempt deferred because line-mile and message-volume series do not yet provide one settled saturation denominator for threshold calculations.
+notes: 1844 is preserved in the profile as the operational demonstration milestone; 1845 is canonical T0. Diffusion milestones use the percentage of the 1920 peak U.S. telegraph wire mileage (approx. 2.2 million miles) as the saturation denominator.
 ```
 
 # Telegraph
@@ -60,13 +60,23 @@ notes: 1844 is preserved in the profile as the operational demonstration milesto
 
 ## Diffusion Milestones
 
-- `T10`:
-- `T25`:
-- `T50`:
-- `T75`:
+- Canonical Tier 2 candidate series: percentage of peak U.S. telegraph wire mileage (1920 peak: ~2,200,000 miles) [4].
+- `T10`: 35 years (1880). Wire mileage reached an estimated 10-15% of peak by 1880 [4].
+- `T25`: 45 years (1890). Wire mileage reached 679,000 miles (approx. 30% of peak) by 1890 [4].
+- `T50`: 60 years (1905). Wire mileage reached an estimated 50% of peak shortly after the turn of the century [4].
+- `T75`: 70 years (1915). Wire mileage reached an estimated 75% of peak by 1915 [4].
 - `Peak Adoption / Current Status`: Superseded as a standalone mass service, but foundational to later wired communications.
 
 Leave these blank when evidence is not yet strong enough.
+
+## References
+
+Use numbered citations inline in the sections above, for example `[1]` or `[2, 3]`.
+
+- [1] Library of Congress. "1840 to 1872 | Samuel F. B. Morse Papers." https://www.loc.gov/collections/samuel-morse-papers/articles-and-essays/timeline/1840-1872/
+- [2] Library of Congress. "Reason Gallery C: World's First Telecommunications Company." https://www.loc.gov/exhibits/treasures/tr22c.html
+- [3] Standage, Tom. *The Victorian Internet*. Walker & Company, 1998.
+- [4] Wikipedia. "Telegraphy." https://en.wikipedia.org/wiki/Telegraphy
 
 ## References
 

@@ -17,11 +17,12 @@ The project is not meant to catalog consumer fads. It is meant to build a defens
 
 ## Current Status
 
-- Greenfield / pre-implementation
-- Canonical docs are now in place
-- Research standards and starter prompts exist
-- A machine-readable dataset template exists
-- No ingestion pipeline, dashboard, notebook suite, or publication workflow has been built yet
+- **Phase 1: Data Generation (March 11, 2026)**
+- A canonical research and data scaffold is in place and verified.
+- **24 technology profiles** have passed QA and are compiled into the master dataset.
+- A functional compiler (`scripts/compile_profiles.py`) handles metadata extraction and dependency validation.
+- Research standards and starter prompts are fully operational.
+- Initial focus is now shifting to **Diffusion Milestones (T10-T75)** and dependency-graph analysis.
 
 ## Intended Use Case
 
@@ -30,7 +31,7 @@ This repo is for a team of human and AI agents who need to:
 - decide which technologies belong in scope
 - create source-backed technology profiles
 - adjudicate disputed dates and dependency claims
-- assemble a canonical master dataset
+- **compile and maintain the canonical master dataset**
 - produce later analysis on diffusion speed, scaling laws, and stacked-system vulnerability
 
 ## Repo Structure

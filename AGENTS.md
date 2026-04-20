@@ -34,6 +34,8 @@ Future agents should read these files in order before making structural changes:
 - The project thesis and constraints in `README.md`
 - The research standards in `STANDARDS_MEMO.md`
 - The initial artifact model in `SCHEMA.md`
+- **24 validated technology profiles** in `research/profiles/`
+- **The research compiler** (`scripts/compile_profiles.py`) for automated CSV generation
 - Starter prompts for all four domain agents plus QA in `research/prompts/`
 - A CSV template for the master dataset in `data/templates/`
 

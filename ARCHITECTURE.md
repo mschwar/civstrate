@@ -23,9 +23,8 @@ The project should start as a research-and-data repository with four layers:
 
 3. `Data artifacts`
    Purpose: hold machine-readable templates, raw evidence extracts, and compiled datasets.
-
-4. `Lightweight validation`
-   Purpose: verify that the repo scaffold and canonical artifacts remain intact as the project evolves.
+4. `Research compiler`
+   Purpose: automate the translation of markdown profiles into the master dataset while enforcing schema and dependency rules.
 
 ## Candidate Components
 
@@ -36,21 +35,20 @@ The project should start as a research-and-data repository with four layers:
   One file per technology, written against a stable profile template.
 
 - `research/evidence/`
-  Optional later home for source extracts or evidence packs when a claim needs more than a normal profile citation.
+  Optional later home for source extracts or evidence packs.
 
 - `data/templates/substrates_master.template.csv`
   The canonical starter header for the master dataset.
 
-- `data/raw/`
-  Raw source extracts, notes, or evidence packs.
-
 - `data/processed/`
   Compiled outputs such as `data/processed/substrates_master.csv`.
+
+- `scripts/compile_profiles.py`
+  The core compiler script that validates metadata and builds the master CSV.
 
 - `scripts/validate_repo.sh`
   A simple repo-level structural validation step.
 
-## Workflow
 
 ```text
 Source note or research question

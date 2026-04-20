@@ -14,13 +14,13 @@ us_commercial_launch_defense: The same Pearl Street deployment also marks the fi
 fundamental_scaling_metric: Cost per delivered kWh over networked transmission and distribution.
 recommended_us_adoption_metric: Share of U.S. households or customers connected to central-station electric service.
 denominator: Households
-t10_years:
-t25_years:
-t50_years:
-t75_years:
+t10_years: 28
+t25_years: 38
+t50_years: 43
+t75_years: 58
 peak_adoption_or_current_status: Near-universal infrastructure dependency; most other modern substrates assume reliable grid access.
 confidence: high
-notes: Uses Pearl Street for both invention and T0 because practical grid and commercial service coincide. Tier 1 diffusion attempt deferred pending normalization of one reproducible national household/customer electrification table from the Historical Statistics dwelling-unit series into explicit threshold years.
+notes: Uses Pearl Street for both invention and T0 because practical grid and commercial service coincide. Diffusion milestones use the percentage of U.S. dwelling units with electric service from Historical Statistics of the United States (Series S 108-119).
 ```
 
 # Electric Grid
@@ -61,13 +61,11 @@ notes: Uses Pearl Street for both invention and T0 because practical grid and co
 ## Diffusion Milestones
 
 - Canonical Tier 1 candidate series: percentage of dwelling units with electric service from Historical Statistics / Census sources [3].
-- `T10`:
-- `T25`:
-- `T50`:
-- `T75`:
+- `T10`: 28 years (1910). First observed year in Historical Statistics above 10% (15% in 1910) [3].
+- `T25`: 38 years (1920). Historical Statistics records 35% in 1920 [3].
+- `T50`: 43 years (1925). Historical Statistics records 53% in 1925 [3].
+- `T75`: 58 years (1940). Historical Statistics records 79% in 1940 [3].
 - `Peak Adoption / Current Status`: Near-universal infrastructure dependency; most other modern substrates assume reliable grid access.
-
-Tier 1 result: deferred. The repo now freezes the intended household electrification/customer-connection series, but the threshold years remain blank until the exact national series is normalized cleanly enough to reproduce T10/T25/T50/T75 without mixing incompatible household and customer definitions [3].
 
 Leave these blank when evidence is not yet strong enough.
 

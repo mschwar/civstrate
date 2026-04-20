@@ -22,11 +22,11 @@ There is no structured, source-disciplined working repository for analyzing how 
 
 ## Goals
 
-- Create a repeatable workflow for researching and validating technology profiles
-- Establish a canonical schema for the master dataset
-- Produce a small but rigorous MVP dataset for the first seed technologies
-- Preserve methodological discipline around dates, dependencies, and adoption metrics
-- Make the next 1 to 3 implementation moves obvious to future agents
+- **Maintain a repeatable workflow** for research, validation, and automated compilation.
+- **Produce a rigorous dataset** of at least 24 foundational technologies.
+- **Quantify diffusion speed** using standardized milestones (T10-T75).
+- **Model dependency chains** for civilizational infrastructure (Stacked-System Analysis).
+- **Make the methodology defensible** through numbered citations and one-sentence defenses for every date claim.
 
 ## Non-Goals
 
@@ -53,8 +53,8 @@ There is no structured, source-disciplined working repository for analyzing how 
 
 ## Initial Milestones
 
-- Milestone 1: Apply the documented inclusion rules, profile format, and citation conventions consistently
-- Milestone 2: Create 12 to 16 validated technology profiles across all four domains
-- Milestone 3: Compile the first canonical `data/processed/substrates_master.csv`
-- Milestone 4: Add diffusion milestone methodology and fill it for the highest-confidence technologies
-- Milestone 5: Produce the first comparative analysis on stacking, acceleration, and hard-vs-soft diffusion
+- **Milestone 1: (COMPLETED)** Stabilize inclusion rules, profile format, and citation conventions.
+- **Milestone 2: (COMPLETED)** Create 24 validated technology profiles across all four domains.
+- **Milestone 3: (COMPLETED)** Compile the first canonical `data/processed/substrates_master.csv` via automation.
+- **Milestone 4: (ACTIVE)** [x] Define diffusion milestone methodology. [ ] Populate T10-T75 fields for all validated rows (9/24 profiles completed).
+- **Milestone 5: (PLANNED)** Produce the first comparative analysis on stacking and acceleration.

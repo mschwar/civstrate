@@ -12,7 +12,7 @@ invention_year_defense: 1970 is the strongest practical invention boundary becau
 us_commercial_launch_year: 1977
 us_commercial_launch_defense: 1977 is the clearest U.S. commercial launch year because Bell Labs records that commercial traffic began on the Chicago lightwave system on April 1, 1977.
 fundamental_scaling_metric: Cost per transmitted bit-kilometer or per Mbps-mile.
-recommended_us_adoption_metric: Fiber route-miles or share of U.S. telecom backbone traffic carried on fiber.
+recommended_us_adoption_metric: Fiber route-miles in operation in the U.S., with share of U.S. telecom backbone traffic carried on fiber as a supporting metric.
 denominator: Volume
 t10_years:
 t25_years:

@@ -59,3 +59,63 @@ Example claim style:
 
 Repo decision:
 To keep adjudication local to each technology, the project stores these references directly in each profile instead of relying on a separate global bibliography during Phase 1.
+
+## 7. Diffusion Milestone Methodology (T10, T25, T50, T75)
+
+To ensure comparability and rigor, agents must calculate the years to reach 10%, 25%, 50%, and 75% adoption thresholds using these standardized steps:
+
+### 1. Select a Canonical Series
+*   **Single-Source Rule:** Use exactly one time-series for all four milestone thresholds. Do not "stitch" multiple series together unless they are historically reconciled.
+*   **National Scope:** Prioritize U.S. national-level series (e.g., U.S. Statistical Abstract, Census).
+*   **Denominator Alignment:** The series must use the same `denominator` (Households, Population, etc.) defined in the profile metadata.
+
+### 2. Define the Adoption Metric
+*   **Direct Adoption:** For consumer-facing or household infrastructure, use the percentage of the denominator that has adopted or is connected (e.g., % of households).
+*   **Exposure / Capacity:** For industrial substrates, use the share of total sector output, capacity, or work performed (e.g., % of total freight ton-miles).
+
+### 3. Determine the Milestone Year
+*   **First Crossing:** The milestone year is the **first calendar year** in which the recorded value meets or exceeds the threshold (10%, 25%, 50%, or 75%).
+*   **Observation vs. Interpolation:** Use the first observed year in the source data. If data is sparse, do not interpolate; record the first observed year above the threshold and note the data gap.
+*   **T0 Boundary:** A milestone year must be greater than or equal to the `us_commercial_launch_year` (T0).
+
+### 4. Calculate "Years Since Launch"
+*   The fields `t10_years`, `t25_years`, etc., store the **number of years** since the `us_commercial_launch_year`.
+*   *Formula:* `Milestone Year - us_commercial_launch_year = Threshold Year Value`.
+*   *Example:* If T0 is 1900 and 10% adoption is reached in 1912, `t10_years` = 12.
+
+### 5. Adjudication for Missing Data/Proxies
+If direct adoption metrics are missing, agents may propose an indirect proxy:
+*   **Justify Proxy:** Provide a clear, one-sentence justification for the chosen proxy in the profile's notes.
+*   **Stability Check:** Ensure the proxy is stable across the entire diffusion period.
+
+### 6. Peak and Supersession Rules
+*   **Stable Peak:** Milestones should only be filled if the technology has a stable or predictable saturation point.
+*   **Supersession:** If a technology was superseded (e.g., Bessemer Steel) before reaching a threshold, that milestone field MUST remain blank.
+
+### 7. Documentation
+*   Every filled milestone must be supported by a reference in the `## References` section.
+*   Record the specific series and caveats in the `notes` field or the profile's `Diffusion Milestones` section.
+
+## 8. Confidence Scoring Model
+
+Every technology profile must assign a qualitative confidence score (`high`, `medium`, `low`) to its data and claims based on the following rubric:
+
+### High Confidence
+*   **Sourcing:** Supported by multiple primary or authoritative statistical sources (e.g., Census, Historical Statistics of the U.S.).
+*   **Consensus:** Dates and metrics are well-established with no significant historical disputes.
+*   **Metric Clarity:** Uses a direct adoption metric with a stable, well-defined denominator.
+*   **Milestones:** Diffusion milestones are derived from a single, continuous, high-quality time series.
+
+### Medium Confidence
+*   **Sourcing:** Supported by at least two reliable secondary sources or one authoritative institutional history.
+*   **Consensus:** Minor disputes may exist (e.g., +/- 2 years on launch), but one date is clearly more defensible for the U.S. context.
+*   **Metric Clarity:** Uses a reasonable proxy for adoption or exposure where direct metrics are unavailable.
+*   **Milestones:** Milestone thresholds are reached, but the series may have minor gaps or require slight normalization.
+
+### Low Confidence
+*   **Sourcing:** Relies on limited or fragmented sources with significant data gaps.
+*   **Consensus:** Primary dates (Invention or T0) are highly disputed or conceptual boundaries are blurry.
+*   **Metric Clarity:** Adoption metrics are purely speculative or based on very weak proxies.
+*   **Milestones:** Milestones are mostly blank or based on extremely sparse observations.
+
+*Note: If a profile is marked `low` confidence, the `notes` field MUST explain the specific data risks or historical disputes that led to the rating.*

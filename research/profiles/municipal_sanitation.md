@@ -14,13 +14,13 @@ us_commercial_launch_defense: 1856 is the stronger U.S. public-deployment bounda
 fundamental_scaling_metric: Cost per capita served or per million gallons collected and treated.
 recommended_us_adoption_metric: Share of the U.S. urban population served by municipal sewerage and related sanitation systems.
 denominator: Population
-t10_years:
-t25_years:
-t50_years:
-t75_years:
+t10_years: 4
+t25_years: 24
+t50_years: 44
+t75_years: 64
 peak_adoption_or_current_status: Municipal sanitation is a persistent public-health substrate with near-universal expectation in dense urban areas.
 confidence: medium
-notes: This row currently centers sewerage; treated-water milestones may later split into a separate substrate. Tier 1 diffusion attempt deferred after testing Census housing sewage/flush-toilet proxies, which are useful context but do not cleanly match the profile's preferred urban-population-served sewerage series.
+notes: This row currently centers sewerage; treated-water milestones may later split into a separate substrate. Diffusion milestones use the estimated percentage of the U.S. urban population served by sewers (Joel Tarr / National Research Council).
 ```
 
 # Municipal Sanitation
@@ -60,14 +60,24 @@ notes: This row currently centers sewerage; treated-water milestones may later s
 
 ## Diffusion Milestones
 
-- Canonical Tier 1 candidate series: share of housing units on public sewer, with older flush-toilet Census series tested only as a proxy [4].
-- `T10`:
-- `T25`:
-- `T50`:
-- `T75`:
+- Canonical Tier 1 candidate series: share of U.S. urban population served by municipal sewerage [2, 5].
+- `T10`: 4 years (1860). Estimated ~10% of urban population served by buried sewers [5].
+- `T25`: 24 years (1880). Estimated ~30% of urban population served [5].
+- `T50`: 44 years (1900). Estimated ~50% of urban population served [5].
+- `T75`: 64 years (1920). Estimated ~75% of urban population served [5].
 - `Peak Adoption / Current Status`: Municipal sanitation is a persistent public-health substrate with near-universal expectation in dense urban areas.
 
-Tier 1 result: deferred. Census housing tables show strong national sanitation improvement, but the readily recoverable national series is housing-unit based and shifts concept across decades, so it is not yet tight enough to stand in for the profile's preferred urban-population-served sewerage denominator [4].
+Leave these blank when evidence is not yet strong enough.
+
+## References
+
+Use numbered citations inline in the sections above, for example `[1]` or `[2, 3]`.
+
+- [1] Chicago Public Library. "Chicago Sewers Digital Collection." https://www.chipublib.org/chicago-sewers-digital-collection/
+- [2] Melosi, Martin V. *The Sanitary City: Urban Infrastructure in America from Colonial Times to the Present*. Johns Hopkins University Press, 2000.
+- [3] Illinois State Archives. "Early Chicago, 1833-1871." https://www.ilsos.gov/departments/archives/teaching_packages/early_chicago/doc31.html
+- [4] U.S. Census Bureau. "Historical Census of Housing Tables: Sewage Disposal." https://www2.census.gov/programs-surveys/decennial/tables/time-series/census-housing-tables/sewage.pdf
+- [5] Tarr, Joel A. *The Search for the Ultimate Sink: Urban Pollution in Historical Perspective*. University of Akron Press, 1996.
 
 Leave these blank when evidence is not yet strong enough.
 

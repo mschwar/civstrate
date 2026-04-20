@@ -12,7 +12,7 @@ invention_year_defense: 1879 is the strongest practical invention boundary becau
 us_commercial_launch_year: 1879
 us_commercial_launch_defense: The same 1879 Tidewater operation is the clearest U.S. commercial launch because shippers could use pipeline transport as an operating freight service rather than as an experimental line.
 fundamental_scaling_metric: Cost per barrel-mile delivered.
-recommended_us_adoption_metric: U.S. pipeline barrel-miles or ton-miles moved, with total trunk pipeline mileage as a supporting diffusion series.
+recommended_us_adoption_metric: U.S. pipeline ton-miles moved, with total trunk pipeline mileage as a supporting diffusion series.
 denominator: Volume
 t10_years:
 t25_years:

@@ -1,30 +1,34 @@
 # Backlog
 
-## P0
+## P0: Diffusion Milestones
 
-- Apply the documented cutoff rule consistently when deciding whether borderline technologies belong in scope.
-- Create the first seed profiles in `research/profiles/` for `electricity`, `electric_grid`, `oil_refining`, `bessemer_steel`, `telegraph`, `telephone`, `semiconductors`, `internet`, `railroads`, `containerization`, `municipal_sanitation`, and `vaccination_infrastructure`.
-- Use the documented numbered citation format and numbered references section in every profile.
-- Produce the first compiled `data/processed/substrates_master.csv` from validated profiles.
+- [x] Define the standardized methodology for the 10%, 25%, 50%, and 75% adoption thresholds.
+- [ ] Backfill `t10_years` through `t75_years` for all 24 validated profiles. (9/24 completed: Electric Grid, Telephone, Internet, Railroads, Municipal Sanitation, Vaccination Infrastructure, Electricity, Telegraph, Containerization).
+- Adjudicate cases where direct adoption metrics (e.g., household percentage) are missing and indirect proxies are required.
 
-## P1
+## P1: Structural Cleanup
 
-- Define a confidence scoring model for disputed historical claims.
-- Decide how to represent dependency lists canonically: slug list, IDs, or sidecar relationship table.
-- Document the methodology for diffusion milestone fields when direct adoption is not observable.
-- Add a repeatable compilation script once enough profiles exist to justify it.
+- [x] Define a confidence scoring model for disputed historical claims (numerical or tiered).
+- [x] Resolve any remaining dependency-slug inconsistencies found during the first compilation pass.
+- [x] Standardize the `recommended_us_adoption_metric` across technologies within the same domain.
 
-## P2
+## P2: Analysis and Visualization
 
-- Build charting or notebook outputs for comparative analysis.
-- Add source-evidence sidecars in `research/evidence/` if normal profile references become too noisy for adjudication.
-- Evaluate whether a lightweight app or dashboard is useful after the dataset proves valuable.
-- Expand beyond the initial technology set and domain coverage only after the methodology survives the first pass.
+- Build charting or notebook outputs for comparative analysis (e.g., diffusion latency by substrate type).
+- Add source-evidence sidecars in `research/evidence/` if profile references become too noisy.
+- Evaluate a lightweight dashboard for visualizing the dependency graph.
+
+## Completed Tasks
+
+- [x] Apply inclusion cutoff rules to initial substrate set.
+- [x] Create seed profiles for 24 foundational technologies.
+- [x] Implement citation and reference standards.
+- [x] Build and verify the `compile_profiles.py` script.
+- [x] Generate the first `data/processed/substrates_master.csv`.
 
 ## Tasks That Should Wait
 
-- Global expansion
-- full automation of research collection
-- dashboard and UI work
-- predictive modeling
-- elaborate storage infrastructure
+- Global expansion (keep U.S. focus)
+- Full automation of research collection
+- Dashboard/UI development
+- Predictive modeling

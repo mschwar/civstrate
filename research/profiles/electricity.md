@@ -14,13 +14,13 @@ us_commercial_launch_defense: Pearl Street Station in lower Manhattan is the cle
 fundamental_scaling_metric: Cost per kWh delivered.
 recommended_us_adoption_metric: Retail electricity sales per capita, with household electrification used as a diffusion proxy where needed.
 denominator: Population
-t10_years:
-t25_years:
-t50_years:
-t75_years:
+t10_years: 28
+t25_years: 38
+t50_years: 43
+t75_years: 58
 peak_adoption_or_current_status: Effectively universal dependency across U.S. households, firms, and public infrastructure.
 confidence: medium
-notes: Scope intentionally separated from electric_grid; invention boundary may tighten to a practical dynamo milestone. Tier 1 diffusion attempt deferred because the cleanest national household-adoption series belongs to electric_grid, while electricity sales-per-capita does not yet provide one stable threshold method distinct from grid connection.
+notes: Scope intentionally separated from electric_grid; invention boundary may tighten to a practical dynamo milestone. Diffusion milestones use the percentage of U.S. dwelling units with electric service from Historical Statistics of the United States (Series S 108-119), which serves as the primary diffusion proxy for the electricity substrate.
 ```
 
 # Electricity
@@ -59,13 +59,23 @@ notes: Scope intentionally separated from electric_grid; invention boundary may 
 
 ## Diffusion Milestones
 
-- `T10`:
-- `T25`:
-- `T50`:
-- `T75`:
+- Canonical Tier 1 candidate series: percentage of U.S. dwelling units with electric service [4].
+- `T10`: 28 years (1910). First observed year in Historical Statistics above 10% (15% in 1910) [4].
+- `T25`: 38 years (1920). Historical Statistics records 35% in 1920 [4].
+- `T50`: 43 years (1925). Historical Statistics records 53% in 1925 [4].
+- `T75`: 58 years (1940). Historical Statistics records 79% in 1940 [4].
 - `Peak Adoption / Current Status`: Effectively universal dependency across U.S. households, firms, and public infrastructure.
 
 Leave these blank when evidence is not yet strong enough.
+
+## References
+
+Use numbered citations inline in the sections above, for example `[1]` or `[2, 3]`.
+
+- [1] Encyclopaedia Britannica. "Michael Faraday." https://www.britannica.com/biography/Michael-Faraday
+- [2] IEEE Engineering and Technology History Wiki. "Milestones: Pearl Street Station, 1882." https://ethw.org/Milestones:Pearl_Street_Station,_1882
+- [3] Hughes, Thomas P. *Networks of Power: Electrification in Western Society, 1880-1930*. Johns Hopkins University Press, 1983.
+- [4] U.S. Bureau of the Census. *Historical Statistics of the United States, Colonial Times to 1957*, Chapter S, series on percentage of dwelling units with electric service, 1960.
 
 ## References
 

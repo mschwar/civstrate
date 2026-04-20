@@ -12,7 +12,7 @@ invention_year_defense: Bell's 1876 patent and successful first call are the mos
 us_commercial_launch_year: 1878
 us_commercial_launch_defense: 1878 is the stronger commercial launch year because the first commercial exchange transformed the telephone from an invention into a purchasable network service.
 fundamental_scaling_metric: Cost per subscriber connection or call carried over distance.
-recommended_us_adoption_metric: Telephones per 100 U.S. residents or household telephone penetration.
+recommended_us_adoption_metric: Household telephone penetration.
 denominator: Population
 t10_years: 42
 t25_years: 42
