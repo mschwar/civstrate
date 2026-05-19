@@ -13,6 +13,7 @@ Start with:
 Then inspect:
 
 - `docs/agentic-overhaul/2026-05-audit.md` for the detailed overhaul audit
+- `docs/agentic-loop/README.md` and `docs/agentic-loop/missing-features.md` for the two-prompt buildout loop
 - `research/prompts/` for the current agent prompts
 - `research/profiles/` for per-technology work
 - `data/templates/` for the canonical dataset header

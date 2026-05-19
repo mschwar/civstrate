@@ -51,6 +51,7 @@ This repo is for a team of human and AI agents who need to:
 - `RUNBOOK.md`: practical instructions for working in the repo
 - `SCHEMA.md`: canonical artifact and dataset schema
 - `STANDARDS_MEMO.md`: research adjudication rules carried forward from the original notes
+- `docs/agentic-loop/`: two-prompt buildout loop and next-feature list
 - `research/prompts/`: starter prompts for the first research and QA agents
 - `research/profiles/`: current and future per-technology profiles
 - `research/evidence/`: optional later evidence packs for claims that need more than normal profile references
@@ -86,7 +87,8 @@ Still undecided:
 1. Read `README.md`, `AGENTS.md`, `PRD.md`, `ARCHITECTURE.md`, `SCHEMA.md`, and `STANDARDS_MEMO.md`.
 2. Run `python scripts/validate_repo.py` to confirm the scaffold and compiled dataset are still in sync.
 3. Use the documented inclusion cutoff in `STANDARDS_MEMO.md` before adding or rejecting borderline technologies.
-4. Create source-backed profiles in `research/profiles/` for any new seed technologies.
-5. Run QA against those profiles using the adjudication prompt.
-6. Compile `data/processed/substrates_master.csv` from validated profiles with `python scripts/compile_profiles.py`.
-7. Choose an implementation surface from the options documented in `ARCHITECTURE.md` only after the first dataset slice exists.
+4. Read `docs/agentic-loop/README.md` and `docs/agentic-loop/missing-features.md` before any buildout feature work.
+5. Create source-backed profiles in `research/profiles/` for any new seed technologies.
+6. Run QA against those profiles using the adjudication prompt.
+7. Compile `data/processed/substrates_master.csv` from validated profiles with `python scripts/compile_profiles.py`.
+8. Choose an implementation surface from the options documented in `ARCHITECTURE.md` only after the first dataset slice exists.

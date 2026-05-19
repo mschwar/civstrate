@@ -16,8 +16,10 @@ Future agents should read these files in order before making structural changes:
 6. `SCHEMA.md`
 7. `STANDARDS_MEMO.md`
 8. `docs/agentic-overhaul/2026-05-audit.md`
-9. `BACKLOG.md`
-10. `ROADMAP.md`
+9. `docs/agentic-loop/README.md`
+10. `docs/agentic-loop/missing-features.md`
+11. `BACKLOG.md`
+12. `ROADMAP.md`
 
 ## Canonical Sources
 
@@ -25,6 +27,8 @@ Future agents should read these files in order before making structural changes:
 - `STANDARDS_MEMO.md` defines inclusion rules, citation expectations, and diffusion methodology.
 - `CURRENT_STATE.md` is the current truth snapshot for the repo.
 - `docs/agentic-overhaul/2026-05-audit.md` is the detailed audit for this overhaul pass.
+- `docs/agentic-loop/README.md` defines the two-prompt buildout loop.
+- `docs/agentic-loop/missing-features.md` is the canonical next-feature list.
 - `research/profiles/` is the source corpus for compiled dataset rows.
 - `data/processed/substrates_master.csv` is generated output and should never be hand-edited.
 - `scripts/compile_profiles.py` is the compiler that turns QA-passed profiles into CSV.

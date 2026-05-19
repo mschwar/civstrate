@@ -47,6 +47,8 @@ REQUIRED_FILES = [
     "scripts/compile_profiles.py",
     "scripts/validate_repo.py",
     "docs/agentic-overhaul/2026-05-audit.md",
+    "docs/agentic-loop/README.md",
+    "docs/agentic-loop/missing-features.md",
 ]
 
 REQUIRED_DIRS = [
@@ -62,6 +64,7 @@ REQUIRED_DIRS = [
     "scripts",
     "docs",
     "docs/agentic-overhaul",
+    "docs/agentic-loop",
 ]
 
 INLINE_CITATION_RE = re.compile(r"\[\d+(?:,\s*\d+)*\]")

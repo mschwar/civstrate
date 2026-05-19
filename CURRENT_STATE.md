@@ -24,7 +24,8 @@ This repository is the working research and data scaffold for a source-disciplin
 
 ## Important Files And Directories
 
-- `README.md`, `AGENTS.md`, `CURRENT_STATE.md`, and `docs/agentic-overhaul/2026-05-audit.md`
+- `README.md`, `AGENTS.md`, `CURRENT_STATE.md`, `docs/agentic-overhaul/2026-05-audit.md`, and `docs/agentic-loop/README.md`
+- `docs/agentic-loop/missing-features.md`
 - `PRD.md`, `ARCHITECTURE.md`, `ROADMAP.md`, `BACKLOG.md`, `RUNBOOK.md`
 - `SCHEMA.md` and `STANDARDS_MEMO.md`
 - `research/prompts/`, `research/profiles/`, `research/evidence/`, and `research/notes/`
