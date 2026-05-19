@@ -2,65 +2,77 @@
 
 ## Mission
 
-Build a defensible, source-backed research corpus and dataset for U.S. civilizational substrates after 1800, with explicit treatment of invention, commercialization, diffusion, scaling, and dependency chains.
+Build a defensible, source-backed research corpus and dataset for U.S. civilizational substrates after 1800, with explicit treatment of invention, commercialization, diffusion, and dependency chains.
 
 ## Read First
 
 Future agents should read these files in order before making structural changes:
 
 1. `README.md`
-2. `AGENTS.md`
-3. `PRD.md`
-4. `ARCHITECTURE.md`
-5. `SCHEMA.md`
-6. `STANDARDS_MEMO.md`
-7. `BACKLOG.md`
-8. `ROADMAP.md`
+2. `CURRENT_STATE.md`
+3. `AGENTS.md`
+4. `PRD.md`
+5. `ARCHITECTURE.md`
+6. `SCHEMA.md`
+7. `STANDARDS_MEMO.md`
+8. `docs/agentic-overhaul/2026-05-audit.md`
+9. `BACKLOG.md`
+10. `ROADMAP.md`
 
-## Operating Rules
+## Canonical Sources
 
-- Treat this repository as an early-stage research system, not a finished software product.
-- Preserve the current scope unless a doc is explicitly updated: U.S.-only, post-1800, foundational substrates only.
-- Separate `known`, `assumed`, and `open question` content explicitly in docs and research notes.
-- Do not present disputed history as settled fact. Record why a chosen date was selected.
-- Use the workflow `profile -> QA/adjudication -> master dataset`, not direct unreviewed edits into the final dataset.
-- Keep file and field naming stable once a canonical name lands in `SCHEMA.md`.
-- Prefer small, source-backed additions over broad speculative framework work.
-- Do not invent an application stack or data platform until the concept and artifact flow are stable.
-- Preserve the distinction between direct adoption metrics and indirect economic exposure metrics for component technologies.
+- `SCHEMA.md` defines the canonical artifact shapes and field names.
+- `STANDARDS_MEMO.md` defines inclusion rules, citation expectations, and diffusion methodology.
+- `CURRENT_STATE.md` is the current truth snapshot for the repo.
+- `docs/agentic-overhaul/2026-05-audit.md` is the detailed audit for this overhaul pass.
+- `research/profiles/` is the source corpus for compiled dataset rows.
+- `data/processed/substrates_master.csv` is generated output and should never be hand-edited.
+- `scripts/compile_profiles.py` is the compiler that turns QA-passed profiles into CSV.
+- `scripts/validate_repo.py` is the canonical local and CI validation command.
 
-## What Is Real
+## Commands
 
-- The project thesis and constraints in `README.md`
-- The research standards in `STANDARDS_MEMO.md`
-- The initial artifact model in `SCHEMA.md`
-- **24 validated technology profiles** in `research/profiles/`
-- **The research compiler** (`scripts/compile_profiles.py`) for automated CSV generation
-- Starter prompts for all four domain agents plus QA in `research/prompts/`
-- A CSV template for the master dataset in `data/templates/`
+Before and after structural edits:
 
-## What Is Assumed
+- `python scripts/validate_repo.py`
+- `python scripts/compile_profiles.py --check`
 
-- The project should begin as a documentation and data repo rather than a UI or product repo
-- Markdown is an acceptable authoring format for individual technology profiles
-- The first concrete build step is a small seed set of validated profiles
-- Phase 1 covers all four domains
-- Citation formatting should follow the newest Google DeepMind white-paper convention: numbered citations in the text and a numbered references section at the end
+When changing profile metadata:
 
-## What Is Undecided
+- `python scripts/compile_profiles.py`
+- `python scripts/validate_repo.py`
+- `python scripts/compile_profiles.py --check`
 
-- Whether a notebook, CLI, or app should become the first implementation surface
-- The best method for measuring indirect exposure for deep components like semiconductors and cloud infrastructure
-- Confidence thresholds for disputed historical claims near the inclusion boundary
+## Generated Vs Hand-Authored
 
-## Definition Of Done For Early-Stage Work
+- Generated: `data/processed/substrates_master.csv`
+- Hand-authored: docs, profile markdown, prompts, template CSV, compiler, validator, and CI workflow
+- The compiler is the source of truth for generated output; do not edit the CSV by hand.
 
-For Phase 0 and early Phase 1 tasks, work is done when:
+## Data And Provenance Rules
 
-- the affected docs remain internally consistent
-- assumptions are marked instead of hidden
-- new profiles include sources and date justifications
-- QA/adjudication can review the work without extra verbal context
-- changes make the next implementation move more obvious, not less
+- Keep `primary_dependencies` limited to canonical profile IDs.
+- Never invent placeholder slugs for unresolved prerequisites.
+- Every `qa_passed` profile must have inline numbered citations and a numbered `## References` section.
+- Every date claim needs a one-sentence defense in the profile metadata.
+- Treat direct ownership metrics and indirect exposure metrics as different measurement problems.
+- Do not present disputed history as settled. Record the rationale for the chosen date.
+- If a claim, license, roadmap item, or status is contradictory, document the contradiction and make the smallest safe correction.
 
-Work is not done if it only adds volume, new abstractions, or speculative code without improving clarity or execution readiness.
+## Safe-Change Rules
+
+- Make small, reviewable patches.
+- Do not rewrite major artifacts unless the current truth is clearly wrong.
+- Update source profile files first when a generated artifact needs to change.
+- Do not hand-edit generated outputs.
+- Do not introduce new frameworks, storage layers, or product surfaces unless the workflow requires them.
+- If docs conflict, reconcile them in place rather than layering new contradictions on top.
+
+## Known Traps
+
+- `bash scripts/validate_repo.sh` is only a compatibility wrapper; use `python scripts/validate_repo.py` as the canonical command.
+- `scripts/compile_profiles.py` only compiles `status: qa_passed` profiles.
+- Dependency validation fails if a `primary_dependencies` slug does not resolve to a compiled profile id or points forward in time.
+- `confidence` accepts only `high`, `medium`, or `low`.
+- The profile template and compiler expect `confidence`, not a separate `confidence_score` field.
+- The repo is still research-first; do not confuse the existence of a compiler with a finished application product.

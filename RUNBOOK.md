@@ -5,32 +5,34 @@
 Start with:
 
 1. `README.md` for the current project state
-2. `AGENTS.md` for operating rules
-3. `PRD.md` and `ARCHITECTURE.md` for scope and workflow
-4. `SCHEMA.md` and `STANDARDS_MEMO.md` for research contracts
+2. `CURRENT_STATE.md` for the current truth snapshot
+3. `AGENTS.md` for operating rules
+4. `PRD.md` and `ARCHITECTURE.md` for scope and workflow
+5. `SCHEMA.md` and `STANDARDS_MEMO.md` for research contracts
 
 Then inspect:
 
+- `docs/agentic-overhaul/2026-05-audit.md` for the detailed overhaul audit
 - `research/prompts/` for the current agent prompts
 - `research/profiles/` for per-technology work
 - `data/templates/` for the canonical dataset header
 
 ## Commands That Exist
 
-- `bash scripts/validate_repo.sh`
-  Validates that the required scaffold files and directories exist and that the dataset template header is present.
-- `python3 scripts/compile_profiles.py`
+- `python scripts/validate_repo.py`
+  Validates that the required scaffold files and directories exist, checks profile citations and obvious markdown links, and confirms the compiled dataset is fresh.
+- `python scripts/compile_profiles.py`
   Rebuilds `data/processed/substrates_master.csv` from the metadata blocks in `research/profiles/*.md`, counting references automatically and including only `status: qa_passed` profiles.
-- `python3 scripts/compile_profiles.py --check`
+- `python scripts/compile_profiles.py --check`
   Verifies that the checked-in `data/processed/substrates_master.csv` matches what the compiler would generate.
 
-There is intentionally no application runtime, package manager, or build system yet.
+There is intentionally no application runtime or package manager yet; the executable surface is the compiler and validator.
 
 ## How To Validate Progress
 
-- Run `python3 scripts/compile_profiles.py` after changing profile metadata.
-- Run `python3 scripts/compile_profiles.py --check` before finishing to confirm the compiled dataset is up to date.
-- Run `bash scripts/validate_repo.sh` after structural changes.
+- Run `python scripts/compile_profiles.py` after changing profile metadata.
+- Run `python scripts/compile_profiles.py --check` before finishing to confirm the compiled dataset is up to date.
+- Run `python scripts/validate_repo.py` after structural changes.
 - Re-read any docs you changed for consistency with `README.md`, `AGENTS.md`, and `SCHEMA.md`.
 - When adding profiles, confirm that every date claim has a source and a one-sentence defense.
 - Confirm that profile prose uses numbered citations and ends with a numbered `References` section.
@@ -47,4 +49,4 @@ There is intentionally no application runtime, package manager, or build system 
 
 ## Recommended Next Move
 
-Edit the metadata block in a validated profile, rerun `python3 scripts/compile_profiles.py`, and treat the regenerated `data/processed/substrates_master.csv` as the canonical compiled output rather than editing the CSV by hand.
+Edit the metadata block in a validated profile, rerun `python scripts/compile_profiles.py`, and treat the regenerated `data/processed/substrates_master.csv` as the canonical compiled output rather than editing the CSV by hand.

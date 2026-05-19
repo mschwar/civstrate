@@ -23,7 +23,6 @@ t75_years:
 peak_adoption_or_current_status: Current reach, saturation, or role summary.
 confidence: medium
 notes: Caveats that should survive compilation. Leave blank only if there are none.
-confidence_score: # (3) High, (2) Medium, (1) Low, (0) Speculative
 ```
 
 # Technology Name
@@ -86,3 +85,5 @@ Use numbered citations inline in the sections above, for example `[1]` or `[2, 3
 - Dependency check:
 - T0 check:
 - Metric check:
+
+The compiler reads `confidence`; do not add helper score fields to the metadata block unless the compiler is updated first.

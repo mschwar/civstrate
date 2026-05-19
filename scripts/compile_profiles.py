@@ -20,6 +20,7 @@ DOMAIN_VALUES = {"Metabolism", "Vascular", "Nervous_System", "Immune_System"}
 SUBSTRATE_TYPE_VALUES = {"Hard", "Soft"}
 DENOMINATOR_VALUES = {"Households", "Population", "Firms", "GDP", "Volume"}
 STATUS_VALUES = {"draft", "qa_passed"}
+CONFIDENCE_VALUES = {"high", "medium", "low"}
 
 METADATA_FIELDS = [
     "id",
@@ -188,6 +189,8 @@ def validate_and_build_row(path: Path, metadata: dict[str, str], source_count: i
         raise CompileError(f"{path.name}: invalid substrate_type '{metadata['substrate_type']}'")
     if metadata["denominator"] not in DENOMINATOR_VALUES:
         raise CompileError(f"{path.name}: invalid denominator '{metadata['denominator']}'")
+    if metadata["confidence"] not in CONFIDENCE_VALUES:
+        raise CompileError(f"{path.name}: invalid confidence '{metadata['confidence']}'")
 
     normalized: dict[str, str] = {}
     for field in INTEGER_FIELDS:

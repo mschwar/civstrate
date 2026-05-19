@@ -9,7 +9,7 @@ The repository began as a loose note folder with:
 - a standards memo in `STANDARDS_MEMO.md`
 - an untitled prompt note that has been preserved under `research/notes/`
 
-There is no application runtime, data pipeline, or validated dataset yet.
+There is no application runtime or public-facing product surface yet, but there is now a working research compiler, a validated profile corpus, and a compiled master dataset.
 
 ## Proposed Target Architecture
 
@@ -46,8 +46,8 @@ The project should start as a research-and-data repository with four layers:
 - `scripts/compile_profiles.py`
   The core compiler script that validates metadata and builds the master CSV.
 
-- `scripts/validate_repo.sh`
-  A simple repo-level structural validation step.
+- `scripts/validate_repo.py`
+  A simple repo-level structural validation step that checks the scaffold, profile citations, obvious markdown links, and compiled dataset freshness.
 
 
 ```text

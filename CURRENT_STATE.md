@@ -1,36 +1,52 @@
-# Current State (March 11, 2026)
+# Current State
 
-This document provides an objective snapshot of the repository's current state, distinguishing confirmed facts from inferred intent or stale documentation.
+Audit date: 2026-05-19
+
+This repository is the working research and data scaffold for a source-disciplined program that maps the invention, commercialization, diffusion, and dependency structure of foundational U.S. civilizational substrates after 1800. It now has a validated profile corpus, a compiled master dataset, and a small validation/compile toolchain; the main remaining work is methodological depth rather than repo bootstrapping.
 
 ## Confirmed Working
 
-- **Repository Scaffold:** The folder structure is stable and passes `scripts/validate_repo.sh`.
-- **Core Methodology:** Inclusion rules and research standards are documented in `STANDARDS_MEMO.md` and applied across the profile set.
-- **Profile Corpus:** 25 technology profiles exist in `research/profiles/`.
-- **Validation Status:** 24 of these profiles have the status `qa_passed` in their metadata.
-- **Compiler Script:** `scripts/compile_profiles.py` is fully functional. It correctly parses markdown metadata, enforces dependency ordering, and regenerates the master CSV.
-- **Master Dataset:** `data/processed/substrates_master.csv` contains 24 validated rows, in sync with the profile metadata.
-- **Agent Prompts:** Starter prompts for all four domains plus a QA adjudicator are available in `research/prompts/`.
+- The repo scaffold is stable and validated by `python scripts/validate_repo.py`.
+- `scripts/compile_profiles.py` successfully regenerates `data/processed/substrates_master.csv` from QA-passed profiles.
+- `python scripts/compile_profiles.py --check` confirms the checked-in CSV is current.
+- `research/profiles/` contains **24** technology profiles, all marked `status: qa_passed`.
+- `data/processed/substrates_master.csv` contains **24** compiled rows and matches the compiler output.
+- Starter prompts for the four domain agents plus QA are present in `research/prompts/`.
+- The canonical schema, standards memo, runbook, and profile template are all in place.
+- A minimal GitHub Actions validation workflow exists and mirrors the local validation command.
 
-## Unverified or Partially Complete
+## Commands And Results
 
-- **Diffusion Milestones:** The `t10_years` through `t75_years` fields are mostly empty across the profile set. The methodology for these is documented but not yet fully operationalized for most technologies.
-- **Dependency Slugs:** While the compiler checks for slug existence, some dependency relationships may still need refined historical review.
-- **Source Depth:** While every `qa_passed` profile includes at least 2-4 sources, a deeper "evidence pack" in `research/evidence/` has not yet been used for any technology.
-- **Status Field:** Several profiles are still marked as `status: draft` and are intentionally excluded from the master dataset.
+- `python scripts/validate_repo.py` passed.
+- `python scripts/compile_profiles.py` passed.
+- `python scripts/compile_profiles.py --check` passed.
+- `bash scripts/validate_repo.sh` is a legacy wrapper; it was not executable in this Windows sandbox because `bash` is unavailable here.
 
-## Stale or Conflicting Areas
+## Important Files And Directories
 
-- **README.md / PRD.md:** Still describe the repo as "greenfield / pre-implementation" and list "creating the first seed profiles" as a future task. In reality, 24 seed profiles are complete and compiled.
-- **BACKLOG.md / ROADMAP.md:** Phase 0 and Phase 1 tasks are largely finished but still listed as active P0 priorities.
-- **ARCHITECTURE.md:** Discusses "implementation surface options" but does not fully reflect that a "CLI-first research compiler" is already the operating reality.
+- `README.md`, `AGENTS.md`, `CURRENT_STATE.md`, and `docs/agentic-overhaul/2026-05-audit.md`
+- `PRD.md`, `ARCHITECTURE.md`, `ROADMAP.md`, `BACKLOG.md`, `RUNBOOK.md`
+- `SCHEMA.md` and `STANDARDS_MEMO.md`
+- `research/prompts/`, `research/profiles/`, `research/evidence/`, and `research/notes/`
+- `data/templates/` and `data/processed/`
+- `scripts/compile_profiles.py` and `scripts/validate_repo.py`
 
-## Immediate Repo Risks
+## Stale Or Conflicting Docs Or Metadata
 
-- **Historical Date Drift:** Date claims (invention vs. T0) are highly sensitive to interpretation. While defenses are included, a secondary QA pass is recommended as the dataset grows.
-- **Metric Inconsistency:** Adoption metrics (denominators) vary by technology type. Ensuring comparability across "Hard" (physical) and "Soft" (institutional) substrates remains a challenge.
-- **Scaling Complexity:** The `fundamental_scaling_metric` is often a single value (e.g., "Cost per kWh"). Capturing the multi-dimensional nature of scaling in a single field may be reductive.
+- The main repo docs have been reconciled to the current state in this overhaul.
+- The remaining legacy artifact is `scripts/validate_repo.sh`, which now delegates to the Python validator for compatibility.
+- `BACKLOG.md` still correctly treats diffusion milestone backfilling as open work.
 
-## Operating Status Summary
+## Known Risks
 
-The project has successfully moved from "Concept" to "Initial Data Generation." The infrastructure for compiling and validating data is solid. The primary bottleneck is now the research required to populate diffusion milestones (T10-T75) and the adjudication of more complex dependency chains.
+- Diffusion milestone backfilling remains incomplete for most profiles.
+- Dependency chains still need periodic historical review as new profiles are added.
+- The repo has a strong validation spine but no broader automated test suite yet.
+- Hard and soft substrate adoption metrics remain methodologically different and should not be collapsed casually.
+
+## Immediate Next Moves
+
+- Backfill the remaining T10-T75 diffusion milestones where the underlying series are defensible.
+- Keep dependency QA tight as new profiles are added.
+- Add evidence packs only when profile references become noisy or disputed.
+- Produce the first comparative analysis artifact only after the existing dataset slice stays stable under validation.

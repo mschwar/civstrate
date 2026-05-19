@@ -1,8 +1,8 @@
 # Civilizational Substrate Project
 
-This repository is a greenfield bootstrap for a research and data program that maps the invention, commercialization, diffusion, and dependency structure of foundational "civilizational substrates" in the United States from 1800 to the present.
+This repository is the working research and data scaffold for a source-disciplined program that maps the invention, commercialization, diffusion, and dependency structure of foundational "civilizational substrates" in the United States from 1800 to the present.
 
-The workspace is intentionally pre-implementation. It now has a coherent operating structure, but it does not yet have a complete dataset, a settled software stack, or a finished product surface.
+The repo already has a validated profile corpus, a canonical schema, and a compiler that turns QA-passed profiles into the master dataset. The remaining work is methodological depth: diffusion milestones, dependency-chain refinement, and later analysis outputs.
 
 ## Project Overview
 
@@ -17,12 +17,16 @@ The project is not meant to catalog consumer fads. It is meant to build a defens
 
 ## Current Status
 
-- **Phase 1: Data Generation (March 11, 2026)**
+- **Phase 1: Data Generation and Validation**
 - A canonical research and data scaffold is in place and verified.
-- **24 technology profiles** have passed QA and are compiled into the master dataset.
+- **24 technology profiles** have passed QA and compile into the master dataset.
 - A functional compiler (`scripts/compile_profiles.py`) handles metadata extraction and dependency validation.
-- Research standards and starter prompts are fully operational.
+- Research standards and starter prompts are operational.
 - Initial focus is now shifting to **Diffusion Milestones (T10-T75)** and dependency-graph analysis.
+
+## Validation
+
+Run `python scripts/validate_repo.py` before and after structural edits.
 
 ## Intended Use Case
 
@@ -37,7 +41,9 @@ This repo is for a team of human and AI agents who need to:
 ## Repo Structure
 
 - `README.md`: entry point and orientation
+- `CURRENT_STATE.md`: current repo truth snapshot
 - `AGENTS.md`: operating guide for future agents
+- `docs/agentic-overhaul/2026-05-audit.md`: detailed overhaul audit
 - `PRD.md`: product and project definition for the research program
 - `ARCHITECTURE.md`: target repo and workflow architecture
 - `ROADMAP.md`: phased execution plan
@@ -46,12 +52,12 @@ This repo is for a team of human and AI agents who need to:
 - `SCHEMA.md`: canonical artifact and dataset schema
 - `STANDARDS_MEMO.md`: research adjudication rules carried forward from the original notes
 - `research/prompts/`: starter prompts for the first research and QA agents
-- `research/profiles/`: future per-technology profiles
+- `research/profiles/`: current and future per-technology profiles
 - `research/evidence/`: optional later evidence packs for claims that need more than normal profile references
 - `research/notes/`: preserved source notes from the loose-folder stage
 - `data/templates/`: starter machine-readable artifacts
 - `data/raw/`: future raw source extracts and evidence packs
-- `data/processed/`: future compiled datasets
+- `data/processed/`: compiled datasets, including the canonical master CSV
 - `scripts/`: lightweight repo validation and utilities
 
 ## What Is Known, Assumed, and Undecided
@@ -78,8 +84,9 @@ Still undecided:
 ## How To Continue From Here
 
 1. Read `README.md`, `AGENTS.md`, `PRD.md`, `ARCHITECTURE.md`, `SCHEMA.md`, and `STANDARDS_MEMO.md`.
-2. Use the documented inclusion cutoff in `STANDARDS_MEMO.md` before adding or rejecting borderline technologies.
-3. Create a small set of source-backed profiles in `research/profiles/` for seed technologies across all four domains.
-4. Run QA against those profiles using the adjudication prompt.
-5. Compile the first `data/processed/substrates_master.csv` from validated profiles.
-6. Choose an implementation surface from the options documented in `ARCHITECTURE.md` only after the first dataset slice exists.
+2. Run `python scripts/validate_repo.py` to confirm the scaffold and compiled dataset are still in sync.
+3. Use the documented inclusion cutoff in `STANDARDS_MEMO.md` before adding or rejecting borderline technologies.
+4. Create source-backed profiles in `research/profiles/` for any new seed technologies.
+5. Run QA against those profiles using the adjudication prompt.
+6. Compile `data/processed/substrates_master.csv` from validated profiles with `python scripts/compile_profiles.py`.
+7. Choose an implementation surface from the options documented in `ARCHITECTURE.md` only after the first dataset slice exists.
