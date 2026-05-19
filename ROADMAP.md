@@ -8,7 +8,7 @@ Exit criteria:
 - [x] seed technologies for the MVP are explicitly named
 - [x] the four-domain Phase 1 boundary is reflected consistently
 
-## Phase 1: Minimum Viable Implementation (NEARLY COMPLETE)
+## Phase 1: Minimum Viable Implementation (COMPLETE)
 
 Purpose:
 Produce the first credible dataset slice.
@@ -17,7 +17,7 @@ Work:
 - [x] write validated profiles for the initial seed technologies
 - [x] run QA adjudication on those profiles
 - [x] compile the first `data/processed/substrates_master.csv`
-- [ ] complete backfilling of all diffusion milestones (T10-T75)
+- [x] complete initial diffusion milestone adjudication by backfilling defensible thresholds and explicitly deferring unstable series
 
 Exit criteria:
 - at least 24 validated technologies exist
@@ -28,7 +28,8 @@ Exit criteria:
 
 Work:
 
-- add T10, T25, T50, and T75 where defensible
+- make complete, partial, and intentionally deferred diffusion coverage visible without manual CSV inspection
+- add or revise T10, T25, T50, and T75 only where a defensible series is available
 - compare hard vs soft substrate adoption latency
 - map dependency chains and stacked-vulnerability patterns
 - produce first charts, memos, or notebooks

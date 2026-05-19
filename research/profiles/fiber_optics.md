@@ -20,7 +20,7 @@ t50_years:
 t75_years:
 peak_adoption_or_current_status: Core physical bandwidth substrate for telecom backbones, broadband access, data centers, and long-haul internet transport.
 confidence: medium
-notes: Uses 1977 because Bell System commercial traffic began in Chicago that year; the 1976 Atlanta experiment remains a precursor rather than canonical T0. Tier 1 diffusion attempt deferred because route-mile and traffic-share series do not yet form one continuous national threshold series that captures both buildout and bandwidth scaling.
+notes: Uses 1977 because Bell System commercial traffic began in Chicago that year; the 1976 Atlanta experiment remains a precursor rather than canonical T0. Diffusion milestones are explicitly deferred because route-miles, lit capacity, backbone traffic share, and FCC last-mile fiber-connection series do not form one continuous volume-denominator threshold series for both physical buildout and bandwidth scaling.
 ```
 
 # Fiber Optics
@@ -66,7 +66,7 @@ notes: Uses 1977 because Bell System commercial traffic began in Chicago that ye
 - `T75`:
 - `Peak Adoption / Current Status`: Core physical bandwidth substrate for telecom backbones, broadband access, data centers, and long-haul internet transport.
 
-Leave these blank when evidence is not yet strong enough.
+Milestones are explicitly deferred. Fiber route-miles, lit capacity, backbone traffic shares, and FCC Form 477/Internet Access Services connection counts each measure a useful slice of fiber diffusion, but they do not form a single national volume-denominator series from 1977 onward. FCC access reports classify fixed connections by end-user technology, including optical carrier/fiber to the premises, which is a last-mile broadband measure rather than a backbone fiber or transmitted-bit share [4]. Using that series would narrow the profile to broadband access and miss long-haul telecom, carrier backbones, data-center interconnects, and metro transport [2, 3, 4].
 
 ## References
 
@@ -75,6 +75,7 @@ Use numbered citations inline in the sections above, for example `[1]` or `[2, 3
 - [1] Corning. "Our History of Optical Fiber Innovation." https://www.corning.com/optical-communications/emea/en/home/products/fiber/optical-fiber-innovation.html
 - [2] Corning. "Fiber Gets Real with Single-Mode Fiber Development." https://www.corning.com/in/en/markets/Optical-Communications-Market/streamlined-connectivity/timeline-1978.html
 - [3] Nokia Bell Labs. "Atlanta Fiber System Experiment: Overview." https://www.nokia.com/bell-labs/publications-and-media/publications/atlanta-fiber-system-experiment-overview/
+- [4] Federal Communications Commission. "Internet Access Services: Status as of June 30, 2024." Office of Economics and Analytics, May 2025. https://docs.fcc.gov/public/attachments/DOC-411463A1.pdf
 
 ## Open Questions
 

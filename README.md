@@ -2,7 +2,7 @@
 
 This repository is the working research and data scaffold for a source-disciplined program that maps the invention, commercialization, diffusion, and dependency structure of foundational "civilizational substrates" in the United States from 1800 to the present.
 
-The repo already has a validated profile corpus, a canonical schema, and a compiler that turns QA-passed profiles into the master dataset. The remaining work is methodological depth: diffusion milestones, dependency-chain refinement, and later analysis outputs.
+The repo already has a validated profile corpus, a canonical schema, and a compiler that turns QA-passed profiles into the master dataset. The remaining work is methodological depth: diffusion coverage reporting, dependency-chain refinement, and later analysis outputs.
 
 ## Project Overview
 
@@ -22,7 +22,7 @@ The project is not meant to catalog consumer fads. It is meant to build a defens
 - **24 technology profiles** have passed QA and compile into the master dataset.
 - A functional compiler (`scripts/compile_profiles.py`) handles metadata extraction and dependency validation.
 - Research standards and starter prompts are operational.
-- Initial focus is now shifting to **Diffusion Milestones (T10-T75)** and dependency-graph analysis.
+- Initial focus is now shifting to **Diffusion Milestone coverage reporting**, comparative analysis, and dependency-graph analysis.
 
 ## Validation
 

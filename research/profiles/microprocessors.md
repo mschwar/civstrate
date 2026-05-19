@@ -20,7 +20,7 @@ t50_years:
 t75_years:
 peak_adoption_or_current_status: Foundational compute substrate embedded in PCs, servers, industrial control, vehicles, phones, and many later digital systems.
 confidence: high
-notes: Narrower than semiconductors and intended to capture the CPU-on-a-chip architectural break; the long-run adoption series may later need an exposure metric instead of pure device counts. Tier 1 diffusion attempt deferred because device counts understate embedded diffusion while compute-exposure metrics are not yet normalized.
+notes: Narrower than semiconductors and intended to capture the CPU-on-a-chip architectural break. Diffusion milestones are explicitly deferred because PC ownership or shipment series capture one downstream device class, embedded controllers and servers lack one normalized volume denominator, and compute-exposure metrics would collapse the row into semiconductors rather than isolating microprocessors.
 ```
 
 # Microprocessors
@@ -66,7 +66,7 @@ notes: Narrower than semiconductors and intended to capture the CPU-on-a-chip ar
 - `T75`:
 - `Peak Adoption / Current Status`: Foundational compute substrate embedded in PCs, servers, industrial control, vehicles, phones, and many later digital systems.
 
-Leave these blank when evidence is not yet strong enough.
+Milestones are explicitly deferred. Household computer ownership is a useful downstream adoption series, but it begins as a Census ACS series only after microprocessors had already diffused through PCs, embedded controllers, phones, vehicles, and industrial equipment; Census also revised the computer and internet questions in 2016 and treats smartphones, tablets, selected smart-home devices, and single-board computers as computers in later ACS reporting [4, 5]. A PC-ownership or PC-shipment denominator would narrow the profile to one end-user market, while broader embedded-device counts and compute-capacity exposure are not normalized to one stable volume denominator for T10-T75 first crossings [1, 4, 5].
 
 ## References
 
@@ -75,6 +75,8 @@ Use numbered citations inline in the sections above, for example `[1]` or `[2, 3
 - [1] Intel. "Announcing a New Era of Integrated Electronics: The Intel 4004." https://www.intel.com/content/www/us/en/history/virtual-vault/articles/the-intel-4004.html
 - [2] Intel. "The Intel 8008." https://www.intel.com/content/www/us/en/history/virtual-vault/articles/the-8008.html
 - [3] Intel. "Intel Marks 30th Anniversary of the Microprocessor." https://www.intel.com/pressroom/archive/releases/2001/20011115corp_a.htm
+- [4] File, Thom, and Camille Ryan. "Computer and Internet Use in the United States: 2013." U.S. Census Bureau, American Community Survey Reports ACS-28, 2014. https://www2.census.gov/library/publications/2014/acs/acs-28.pdf
+- [5] Mejia, Daniela. "Computer and Internet Use in the United States: 2021." U.S. Census Bureau, American Community Survey Reports ACS-56, 2024. https://www2.census.gov/library/publications/2024/demo/acs-56.pdf
 
 ## Open Questions
 
