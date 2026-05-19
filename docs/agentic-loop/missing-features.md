@@ -12,8 +12,9 @@ Current diffusion coverage:
 
 - 24 QA-passed profiles compile into `data/processed/substrates_master.csv`.
 - 10 profiles have complete T10/T25/T50/T75 milestone fields.
-- 6 profiles have explicit documented deferrals.
-- 8 profiles still need milestone adjudication or an explicit documented deferral.
+- 9 profiles have explicit documented deferrals.
+- 1 profile has a partial milestone backfill with remaining thresholds explicitly deferred.
+- 4 profiles still need milestone adjudication or an explicit documented deferral.
 
 The two-prompt loop should handle backfills as data features before UI features. Each backfill branch must update source profiles first, regenerate the CSV with `python scripts/compile_profiles.py`, and verify with `python scripts/validate_repo.py` plus `python scripts/compile_profiles.py --check`.
 
@@ -21,7 +22,7 @@ The two-prompt loop should handle backfills as data features before UI features.
 | --- | --- | --- | --- | --- | --- |
 | 1 | done | Diffusion backfill: direct public/household infrastructure | Backfilled `radio`; explicitly deferred `modern_hospital_systems`, `public_health_surveillance`, and `water_filtration_and_chlorination` | `python scripts/compile_profiles.py`; `python scripts/validate_repo.py`; `python scripts/compile_profiles.py --check` | Radio now uses household receiver ownership; the three public-health infrastructure profiles document why one stable population-denominator threshold series is not available. |
 | 2 | done | Diffusion backfill: industrial materials and fuels | Explicitly deferred `bessemer_steel`, `oil_refining`, and `portland_cement_concrete` | `python scripts/compile_profiles.py`; `python scripts/validate_repo.py`; `python scripts/compile_profiles.py --check` | These profiles remain blank by design: Bessemer is superseded, refining capacity lacks a stable saturation denominator, and cement/concrete volume tracks cyclical construction demand. |
-| 3 | open | Diffusion backfill: industrial power and transport work | Backfill or explicitly defer `internal_combustion_engine`, `nuclear_power`, `freight_trucking`, and `pipelines` | Same compiler and validator checks | Use work-share or capacity-share series only when the denominator is stable across the diffusion period. |
+| 3 | done | Diffusion backfill: industrial power and transport work | Backfilled nuclear-power T10; explicitly deferred higher nuclear thresholds plus `internal_combustion_engine`, `freight_trucking`, and `pipelines` | `python scripts/compile_profiles.py`; `python scripts/validate_repo.py`; `python scripts/compile_profiles.py --check` | Nuclear has a stable generation-share series for T10; the other rows remain blank by design because their volume/work metrics do not yet have stable threshold denominators. |
 | 4 | open | Diffusion backfill: compute and network substrates | Backfill or explicitly defer `fiber_optics`, `microprocessors`, and `semiconductors` | Same compiler and validator checks | Treat indirect exposure carefully. GDP or capacity proxies need a clear denominator and caveat. |
 | 5 | open | Diffusion coverage report | Add a generated or documented report showing which profiles have complete, partial, blank, or intentionally deferred diffusion milestones | Explicit non-UI verification command and validator check | This should make the 9/24, 15/24 state discoverable without manually inspecting the CSV. |
 | 6 | open | First comparative analysis artifact | Produce a small chart, notebook, or memo using only profiles with defensible complete milestones | Re-run analysis from command line and validate repo | Keep claims scoped to complete rows. Do not compare blanks or deferred rows as zeroes. |

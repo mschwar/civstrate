@@ -20,7 +20,7 @@ t50_years:
 t75_years:
 peak_adoption_or_current_status: Core bulk-transport substrate for crude oil, refined products, natural gas, and many industrial feedstocks.
 confidence: medium
-notes: Centers the modern long-distance fuel-and-feedstock pipeline substrate rather than ancient or municipal pipe systems; later splitting crude/product and gas pipelines remains open. Tier 1 diffusion attempt deferred because mileage and throughput series diverge across crude, product, and gas networks without one canonical threshold denominator.
+notes: Centers the modern long-distance fuel-and-feedstock pipeline substrate rather than ancient or municipal pipe systems; later splitting crude/product and gas pipelines remains open. Diffusion milestones are explicitly deferred because mileage and throughput series diverge across crude, refined-product, and natural-gas networks without one canonical threshold denominator for the broad pipeline substrate.
 ```
 
 # Pipelines
@@ -60,13 +60,13 @@ notes: Centers the modern long-distance fuel-and-feedstock pipeline substrate ra
 
 ## Diffusion Milestones
 
-- `T10`:
-- `T25`:
-- `T50`:
-- `T75`:
+- `T10`: explicitly deferred.
+- `T25`: explicitly deferred.
+- `T50`: explicitly deferred.
+- `T75`: explicitly deferred.
 - `Peak Adoption / Current Status`: Core bulk-transport substrate for crude oil, refined products, natural gas, and many industrial feedstocks.
 
-Leave these blank when evidence is not yet strong enough.
+Milestones are explicitly deferred because the profile currently combines crude-oil pipelines, refined-product pipelines, natural-gas pipelines, and related feedstock systems. Mileage, barrel-mile, ton-mile, and energy-delivery series do not collapse into one stable denominator without splitting the row or privileging one commodity network [1, 2, 3].
 
 ## References
 

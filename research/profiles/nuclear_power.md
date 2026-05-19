@@ -14,13 +14,13 @@ us_commercial_launch_defense: 1957 is the strongest U.S. commercial launch year 
 fundamental_scaling_metric: Cost per kWh delivered.
 recommended_us_adoption_metric: Share of U.S. electricity generation produced by nuclear power, with installed nuclear generating capacity as a supporting series.
 denominator: Volume
-t10_years:
+t10_years: 20
 t25_years:
 t50_years:
 t75_years:
 peak_adoption_or_current_status: Major zero-carbon baseload substrate with enduring importance to the U.S. grid, though expansion has been slower and more contested than earlier expectations.
 confidence: high
-notes: Uses 1951 for first usable nuclear electricity and 1957 for commercial grid service; the 1954 Atomic Energy Act remains the key civilian-commercial precursor. Tier 1 diffusion attempt deferred because generation-share series are strong, but the practical saturation ceiling for nuclear power remains too policy-contingent for a clean threshold interpretation in Round 1.
+notes: Uses 1951 for first usable nuclear electricity and 1957 for commercial grid service; the 1954 Atomic Energy Act remains the key civilian-commercial precursor. T10 uses nuclear share of total U.S. electricity generation, which first exceeded 10 percent in 1977. T25-T75 are explicitly deferred because the same generation-share series has not reached those thresholds and nuclear's practical saturation ceiling remains policy-contingent.
 ```
 
 # Nuclear Power
@@ -60,13 +60,13 @@ notes: Uses 1951 for first usable nuclear electricity and 1957 for commercial gr
 
 ## Diffusion Milestones
 
-- `T10`:
-- `T25`:
-- `T50`:
-- `T75`:
+- `T10`: 20 years after T0, using 1977 as the first observed year at or above 10 percent of total U.S. electricity generation [5].
+- `T25`: explicitly deferred because the nuclear generation-share series has not reached 25 percent.
+- `T50`: explicitly deferred because the nuclear generation-share series has not reached 50 percent.
+- `T75`: explicitly deferred because the nuclear generation-share series has not reached 75 percent.
 - `Peak Adoption / Current Status`: Major zero-carbon baseload substrate with enduring importance to the U.S. grid, though expansion has been slower and more contested than earlier expectations.
 
-Leave these blank when evidence is not yet strong enough.
+Milestones use nuclear fuel share of total U.S. electricity generation as the canonical series. The same series supports T10, but higher thresholds remain blank because they were not reached in the observed data.
 
 ## References
 
@@ -76,6 +76,7 @@ Use numbered citations inline in the sections above, for example `[1]` or `[2, 3
 - [2] U.S. Department of Energy. "December 23, 1957: Shippingport." https://www.energy.gov/management/december-23-1957-shippingport
 - [3] U.S. Department of Energy. *The United States Naval Nuclear Propulsion Program.* https://www.energy.gov/sites/prod/files/2017/08/f36/nuclear_propulsion_program_8-30-2016%5B1%5D.pdf
 - [4] Nuclear Regulatory Commission. "History." https://ww2.nrc.gov/about-nrc/history
+- [5] Nuclear Energy Institute. "U.S. Nuclear Generating Statistics." Source table from U.S. Energy Information Administration. https://www.nei.org/resources/statistics/us-nuclear-generating-statistics
 
 ## Open Questions
 

@@ -20,7 +20,7 @@ t50_years:
 t75_years:
 peak_adoption_or_current_status: Dominant U.S. door-to-door freight substrate and the key connective tissue between ports, warehouses, rail, and retail distribution.
 confidence: medium
-notes: Uses 1911 to represent trucking as a recognizably operating freight substrate rather than merely the first saleable truck vehicle. Tier 1 diffusion attempt deferred because truck ton-miles capture freight work well but do not yet have a frozen saturation denominator across modal substitution.
+notes: Uses 1911 to represent trucking as a recognizably operating freight substrate rather than merely the first saleable truck vehicle. Diffusion milestones are explicitly deferred because truck ton-miles capture freight work well, but a percentage threshold series requires a stable all-mode freight denominator and a defensible saturation interpretation across modal substitution.
 ```
 
 # Freight Trucking
@@ -60,13 +60,13 @@ notes: Uses 1911 to represent trucking as a recognizably operating freight subst
 
 ## Diffusion Milestones
 
-- `T10`:
-- `T25`:
-- `T50`:
-- `T75`:
+- `T10`: explicitly deferred.
+- `T25`: explicitly deferred.
+- `T50`: explicitly deferred.
+- `T75`: explicitly deferred.
 - `Peak Adoption / Current Status`: Dominant U.S. door-to-door freight substrate and the key connective tissue between ports, warehouses, rail, and retail distribution.
 
-Leave these blank when evidence is not yet strong enough.
+Milestones are explicitly deferred because truck ton-miles are a strong work-performed metric but not, by themselves, a percentage adoption series. Converting trucking to threshold milestones would require selecting an all-mode freight denominator and treating modal substitution as saturation, which is a separate methodological decision not frozen for this profile [2, 3].
 
 ## References
 
