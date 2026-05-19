@@ -5,6 +5,8 @@
 - [x] Define the standardized methodology for the 10%, 25%, 50%, and 75% adoption thresholds.
 - [ ] Backfill `t10_years` through `t75_years` for all 24 validated profiles. (9/24 completed: Electric Grid, Telephone, Internet, Railroads, Municipal Sanitation, Vaccination Infrastructure, Electricity, Telegraph, Containerization).
 - Adjudicate cases where direct adoption metrics (e.g., household percentage) are missing and indirect proxies are required.
+- Execute the remaining backfills through the cohort queue in `docs/agentic-loop/missing-features.md`.
+- Use `docs/agentic-loop/backfill-swarm-plan.md` when parallelizing research across subagents.
 
 ## P1: Structural Cleanup
 
