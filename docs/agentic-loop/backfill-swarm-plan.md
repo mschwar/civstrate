@@ -4,7 +4,7 @@ This plan describes how to use subagents or agent swarms to finish the T10/T25/T
 
 ## Goal
 
-Finish the 15 remaining diffusion backfill decisions by dividing research across parallel agents, then routing every proposed edit through a single integration and QA path.
+Keep a repeatable protocol for diffusion backfill decisions by dividing research across parallel agents, then routing every proposed edit through a single integration and QA path. The initial 15-profile backfill queue has been adjudicated; use this plan for future new profiles or revised milestone series.
 
 The expected output for each assigned profile is one of two outcomes:
 

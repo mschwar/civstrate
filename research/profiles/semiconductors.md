@@ -20,7 +20,7 @@ t50_years:
 t75_years:
 peak_adoption_or_current_status: Foundational dependency across computation, communications, industrial control, and consumer electronics.
 confidence: medium
-notes: 1951 is retained for T0, but 1954 remains a plausible alternative normalization candidate. Tier 1 diffusion attempt deferred because indirect GDP exposure remains the right lens, but the corresponding milestone method is not yet stable enough for reproducible thresholds.
+notes: 1951 is retained for T0, but 1954 remains a plausible alternative normalization candidate. Diffusion milestones are explicitly deferred because indirect GDP exposure remains the right lens, but translating BEA input-output semiconductor flows and changing industry boundaries into one reproducible GDP-denominator threshold series requires a separate method.
 ```
 
 # Semiconductors
@@ -66,7 +66,7 @@ notes: 1951 is retained for T0, but 1954 remains a plausible alternative normali
 - `T75`:
 - `Peak Adoption / Current Status`: Foundational dependency across computation, communications, industrial control, and consumer electronics.
 
-Leave these blank when evidence is not yet strong enough.
+Milestones are explicitly deferred. BEA input-output accounts are the right starting point for semiconductor-dependent GDP exposure because they trace industry supply and use relationships and include detailed semiconductor-related industries, but the current profile does not yet define a reproducible model for converting those changing industry and commodity tables into one GDP-denominator threshold series [4, 5]. Semiconductor output, sales, capital-stock, and input-output exposure each answer a different question; filling T10-T75 now would either use raw volume without a saturation denominator or embed a hidden sector-classification model in the profile [1, 4, 5].
 
 ## References
 
@@ -75,6 +75,8 @@ Use numbered citations inline in the sections above, for example `[1]` or `[2, 3
 - [1] Computer History Museum. "The Silicon Engine | 1947-1958: Invention of the Transistor / First Commercial Junction Transistor." https://www.computerhistory.org/siliconengine/
 - [2] Nokia Bell Labs. "The Transistor." https://www.bell-labs.com/about/our-history/milestones/transistor/
 - [3] Riordan, Michael, and Lillian Hoddeson. *Crystal Fire: The Invention of the Transistor and the Birth of the Information Age*. W. W. Norton, 1997.
+- [4] U.S. Bureau of Economic Analysis. "Input-Output Accounts Data." https://www.bea.gov/data/industries/input-output-accounts-data
+- [5] U.S. Bureau of Economic Analysis. "Input-Output Accounts: Who Sells What to Whom." March 15, 2021. https://www.bea.gov/news/blog/2021-03-15/input-output-accounts-who-sells-what-whom
 
 ## Open Questions
 

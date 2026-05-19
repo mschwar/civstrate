@@ -3,9 +3,10 @@
 ## P0: Diffusion Milestones
 
 - [x] Define the standardized methodology for the 10%, 25%, 50%, and 75% adoption thresholds.
-- [ ] Backfill `t10_years` through `t75_years` for all 24 validated profiles. (10/24 completed: Electric Grid, Telephone, Internet, Railroads, Municipal Sanitation, Vaccination Infrastructure, Electricity, Telegraph, Containerization, Radio. 10/24 explicitly deferred: Modern Hospital Systems, Public Health Surveillance, Water Filtration and Chlorination, Bessemer Steel, Oil Refining, Portland Cement Concrete, Internal Combustion Engine, Freight Trucking, Pipelines, Refrigerated Logistics Cold Chain. 1/24 partially backfilled: Nuclear Power.)
-- Adjudicate cases where direct adoption metrics (e.g., household percentage) are missing and indirect proxies are required.
-- Execute the remaining backfills through the cohort queue in `docs/agentic-loop/missing-features.md`.
+- [x] Backfill or explicitly adjudicate `t10_years` through `t75_years` for all 24 validated profiles. (10/24 completed: Electric Grid, Telephone, Internet, Railroads, Municipal Sanitation, Vaccination Infrastructure, Electricity, Telegraph, Containerization, Radio. 13/24 explicitly deferred: Modern Hospital Systems, Public Health Surveillance, Water Filtration and Chlorination, Bessemer Steel, Oil Refining, Portland Cement Concrete, Internal Combustion Engine, Freight Trucking, Pipelines, Refrigerated Logistics Cold Chain, Fiber Optics, Microprocessors, Semiconductors. 1/24 partially backfilled: Nuclear Power.)
+- [x] Adjudicate cases where direct adoption metrics (e.g., household percentage) are missing and indirect proxies are required.
+- [ ] Add a diffusion coverage report that shows complete, partial, blank, and intentionally deferred milestone states without manual CSV inspection.
+- Execute remaining diffusion-system work through the cohort queue in `docs/agentic-loop/missing-features.md`.
 - Use `docs/agentic-loop/backfill-swarm-plan.md` when parallelizing research across subagents.
 
 ## P1: Structural Cleanup
