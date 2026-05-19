@@ -61,9 +61,9 @@ notes: Uses 1951 for first usable nuclear electricity and 1957 for commercial gr
 ## Diffusion Milestones
 
 - `T10`: 20 years after T0, using 1977 as the first observed year at or above 10 percent of total U.S. electricity generation [5].
-- `T25`: explicitly deferred because the nuclear generation-share series has not reached 25 percent.
-- `T50`: explicitly deferred because the nuclear generation-share series has not reached 50 percent.
-- `T75`: explicitly deferred because the nuclear generation-share series has not reached 75 percent.
+- `T25`: explicitly deferred because the nuclear generation-share series has not reached 25 percent and the practical saturation ceiling is policy-contingent.
+- `T50`: explicitly deferred because the nuclear generation-share series has not reached 50 percent and the practical saturation ceiling is policy-contingent.
+- `T75`: explicitly deferred because the nuclear generation-share series has not reached 75 percent and the practical saturation ceiling is policy-contingent.
 - `Peak Adoption / Current Status`: Major zero-carbon baseload substrate with enduring importance to the U.S. grid, though expansion has been slower and more contested than earlier expectations.
 
 Milestones use nuclear fuel share of total U.S. electricity generation as the canonical series. The same series supports T10, but higher thresholds remain blank because they were not reached in the observed data.
