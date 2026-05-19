@@ -12,15 +12,15 @@ Current diffusion coverage:
 
 - 24 QA-passed profiles compile into `data/processed/substrates_master.csv`.
 - 10 profiles have complete T10/T25/T50/T75 milestone fields.
-- 3 profiles have explicit documented deferrals.
-- 11 profiles still need milestone adjudication or an explicit documented deferral.
+- 6 profiles have explicit documented deferrals.
+- 8 profiles still need milestone adjudication or an explicit documented deferral.
 
 The two-prompt loop should handle backfills as data features before UI features. Each backfill branch must update source profiles first, regenerate the CSV with `python scripts/compile_profiles.py`, and verify with `python scripts/validate_repo.py` plus `python scripts/compile_profiles.py --check`.
 
 | Rank | Status | Feature | Merge Unit | Verification | Notes |
 | --- | --- | --- | --- | --- | --- |
 | 1 | done | Diffusion backfill: direct public/household infrastructure | Backfilled `radio`; explicitly deferred `modern_hospital_systems`, `public_health_surveillance`, and `water_filtration_and_chlorination` | `python scripts/compile_profiles.py`; `python scripts/validate_repo.py`; `python scripts/compile_profiles.py --check` | Radio now uses household receiver ownership; the three public-health infrastructure profiles document why one stable population-denominator threshold series is not available. |
-| 2 | open | Diffusion backfill: industrial materials and fuels | Backfill or explicitly defer `bessemer_steel`, `oil_refining`, and `portland_cement_concrete` | Same compiler and validator checks | These are likely proxy-heavy. Do not force thresholds where supersession or cyclical demand breaks the denominator. |
+| 2 | done | Diffusion backfill: industrial materials and fuels | Explicitly deferred `bessemer_steel`, `oil_refining`, and `portland_cement_concrete` | `python scripts/compile_profiles.py`; `python scripts/validate_repo.py`; `python scripts/compile_profiles.py --check` | These profiles remain blank by design: Bessemer is superseded, refining capacity lacks a stable saturation denominator, and cement/concrete volume tracks cyclical construction demand. |
 | 3 | open | Diffusion backfill: industrial power and transport work | Backfill or explicitly defer `internal_combustion_engine`, `nuclear_power`, `freight_trucking`, and `pipelines` | Same compiler and validator checks | Use work-share or capacity-share series only when the denominator is stable across the diffusion period. |
 | 4 | open | Diffusion backfill: compute and network substrates | Backfill or explicitly defer `fiber_optics`, `microprocessors`, and `semiconductors` | Same compiler and validator checks | Treat indirect exposure carefully. GDP or capacity proxies need a clear denominator and caveat. |
 | 5 | open | Diffusion coverage report | Add a generated or documented report showing which profiles have complete, partial, blank, or intentionally deferred diffusion milestones | Explicit non-UI verification command and validator check | This should make the 9/24, 15/24 state discoverable without manually inspecting the CSV. |

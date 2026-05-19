@@ -20,7 +20,7 @@ t50_years:
 t75_years:
 peak_adoption_or_current_status: One of the deepest physical substrates in the built environment, embedded in buildings, roads, utilities, dams, and industrial sites.
 confidence: medium
-notes: Uses 1875 because it is the stronger commercial-quality boundary; the row remains intentionally centered on the cement-plus-concrete material system rather than on cement chemistry in isolation. Tier 1 diffusion attempt deferred because consumption tracks cyclical construction demand and no clean saturation denominator is yet frozen.
+notes: Uses 1875 because it is the stronger commercial-quality boundary; the row remains intentionally centered on the cement-plus-concrete material system rather than on cement chemistry in isolation. Diffusion milestones are explicitly deferred because cement consumption and concrete volume are cyclical construction-demand measures rather than stable percentage adoption series, and a portland-share-of-cement proxy would narrow the row to cement chemistry rather than the broader concrete substrate.
 ```
 
 # Portland Cement Concrete
@@ -60,13 +60,13 @@ notes: Uses 1875 because it is the stronger commercial-quality boundary; the row
 
 ## Diffusion Milestones
 
-- `T10`:
-- `T25`:
-- `T50`:
-- `T75`:
+- `T10`: deferred.
+- `T25`: deferred.
+- `T50`: deferred.
+- `T75`: deferred.
 - `Peak Adoption / Current Status`: One of the deepest physical substrates in the built environment, embedded in buildings, roads, utilities, dams, and industrial sites.
 
-Leave these blank when evidence is not yet strong enough.
+Milestones remain blank because the profile is scoped to the portland-cement concrete material system, not merely the replacement of natural cement by portland cement. USGS cement data support production and consumption histories, but consumption volume rises and falls with construction cycles and does not define a stable saturation denominator for first-crossing adoption thresholds [2].
 
 ## References
 

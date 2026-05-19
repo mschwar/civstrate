@@ -20,7 +20,7 @@ t50_years:
 t75_years:
 peak_adoption_or_current_status: Still foundational to transport fuels, petrochemicals, and military logistics despite energy-transition pressures.
 confidence: medium
-notes: Kier-era invention boundary retained; the repo may later split kerosene-era and motor-fuel-era refining. Tier 1 diffusion attempt deferred because refining capacity is a strong industrial exposure series but does not yet have a stable adoption-threshold denominator for Round 1.
+notes: Kier-era invention boundary retained; the repo may later split kerosene-era and motor-fuel-era refining. Diffusion milestones are explicitly deferred because refining capacity is a strong industrial exposure series but not a percentage adoption series with a stable saturation denominator; using barrels per day alone would require selecting an arbitrary peak or policy-contingent capacity ceiling.
 ```
 
 # Oil Refining
@@ -59,13 +59,13 @@ notes: Kier-era invention boundary retained; the repo may later split kerosene-e
 
 ## Diffusion Milestones
 
-- `T10`:
-- `T25`:
-- `T50`:
-- `T75`:
+- `T10`: deferred.
+- `T25`: deferred.
+- `T50`: deferred.
+- `T75`: deferred.
 - `Peak Adoption / Current Status`: Still foundational to transport fuels, petrochemicals, and military logistics despite energy-transition pressures.
 
-Leave these blank when evidence is not yet strong enough.
+Milestones remain blank because the recommended metric is refining capacity in barrels per day. Capacity is appropriate for measuring industrial scale, but it does not supply a stable denominator for 10/25/50/75 percent adoption thresholds across kerosene-era, gasoline-era, petrochemical, and modern transport-fuel refining without imposing an arbitrary peak-capacity denominator [1, 2].
 
 ## References
 

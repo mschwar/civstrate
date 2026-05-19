@@ -20,7 +20,7 @@ t50_years:
 t75_years:
 peak_adoption_or_current_status: The Bessemer process itself was superseded, but low-cost steel remained a permanent civilizational substrate.
 confidence: medium
-notes: 1864 versus 1865 remains a minor normalization question for U.S. launch. Tier 1 diffusion attempt deferred because the Bessemer process was later superseded, so any threshold series is unstable between process adoption and the broader steel substrate it enabled.
+notes: 1864 versus 1865 remains a minor normalization question for U.S. launch. Diffusion milestones are explicitly deferred because Bessemer steel is a superseded process rather than a stable end-state substrate; process-specific output thresholds would measure Bessemer's rise and decline, while broader steel-output thresholds would mix in successor open-hearth, basic oxygen, and electric-arc steelmaking.
 ```
 
 # Bessemer Steel
@@ -60,13 +60,13 @@ notes: 1864 versus 1865 remains a minor normalization question for U.S. launch. 
 
 ## Diffusion Milestones
 
-- `T10`:
-- `T25`:
-- `T50`:
-- `T75`:
+- `T10`: deferred.
+- `T25`: deferred.
+- `T50`: deferred.
+- `T75`: deferred.
 - `Peak Adoption / Current Status`: The Bessemer process itself was superseded, but low-cost steel remained a permanent civilizational substrate.
 
-Leave these blank when evidence is not yet strong enough.
+Milestones remain blank under the supersession rule. The Bessemer process was historically important as the first bulk low-cost steel process, but it was later outstripped by open-hearth steelmaking and then by later steel processes, so a single stable adoption denominator would conflate a process diffusion curve with the broader steel substrate it enabled [1, 3].
 
 ## References
 
