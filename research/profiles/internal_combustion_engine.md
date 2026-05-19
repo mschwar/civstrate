@@ -20,7 +20,7 @@ t50_years:
 t75_years:
 peak_adoption_or_current_status: Still a foundational power plant for road freight, aviation, construction equipment, and backup power despite electrification pressure.
 confidence: medium
-notes: Uses the early U.S. stationary-engine market rather than vehicle commercialization as canonical T0; later automotive and diesel milestones remain downstream expansions of the substrate. Tier 1 diffusion attempt deferred because no single national direct-adoption series spans stationary engines, road vehicles, farm machinery, aviation, and other internal-combustion uses without a disputed proxy choice.
+notes: Uses the early U.S. stationary-engine market rather than vehicle commercialization as canonical T0; later automotive and diesel milestones remain downstream expansions of the substrate. Diffusion milestones are explicitly deferred because no single national direct-adoption or work-share series spans stationary engines, road vehicles, farm machinery, aviation, marine engines, and backup generation without narrowing the row to one downstream use case.
 ```
 
 # Internal Combustion Engine
@@ -60,13 +60,13 @@ notes: Uses the early U.S. stationary-engine market rather than vehicle commerci
 
 ## Diffusion Milestones
 
-- `T10`:
-- `T25`:
-- `T50`:
-- `T75`:
+- `T10`: explicitly deferred.
+- `T25`: explicitly deferred.
+- `T50`: explicitly deferred.
+- `T75`: explicitly deferred.
 - `Peak Adoption / Current Status`: Still a foundational power plant for road freight, aviation, construction equipment, and backup power despite electrification pressure.
 
-Leave these blank when evidence is not yet strong enough.
+Milestones are explicitly deferred because the profile covers internal-combustion prime movers across multiple sectors. Vehicle-miles, freight ton-miles, tractor adoption, aircraft use, engine shipments, and fuel consumption each capture one important downstream slice, but no one series covers the full substrate without violating the single-source and denominator-alignment rules [1, 2, 3].
 
 ## References
 

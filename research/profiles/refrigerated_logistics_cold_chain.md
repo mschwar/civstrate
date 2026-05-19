@@ -20,7 +20,7 @@ t50_years:
 t75_years:
 peak_adoption_or_current_status: Core perishables logistics substrate spanning food, pharmaceuticals, biologics, and temperature-sensitive retail distribution.
 confidence: medium
-notes: Uses the first successful refrigerated meat-shipping system as the canonical origin, while later mechanical refrigeration and highway reefer networks are treated as major scaling phases. Tier 1 diffusion attempt deferred because refrigerated warehouse, railcar, and trailer-capacity series do not yet combine into one clean chain-wide national threshold series.
+notes: Uses the first successful refrigerated meat-shipping system as the canonical origin, while later mechanical refrigeration and highway reefer networks are treated as major scaling phases. Diffusion milestones are explicitly deferred because refrigerated warehouse, railcar, trailer-capacity, and ton-mile series do not combine into one clean chain-wide national threshold series for the broad cold-chain substrate.
 ```
 
 # Refrigerated Logistics Cold Chain
@@ -60,13 +60,13 @@ notes: Uses the first successful refrigerated meat-shipping system as the canoni
 
 ## Diffusion Milestones
 
-- `T10`:
-- `T25`:
-- `T50`:
-- `T75`:
+- `T10`: explicitly deferred.
+- `T25`: explicitly deferred.
+- `T50`: explicitly deferred.
+- `T75`: explicitly deferred.
 - `Peak Adoption / Current Status`: Core perishables logistics substrate spanning food, pharmaceuticals, biologics, and temperature-sensitive retail distribution.
 
-Leave these blank when evidence is not yet strong enough.
+Milestones are explicitly deferred because the profile spans refrigerated railcars, cold-storage warehouses, highway refrigerated trailers, and later biologics/pharmaceutical cold-chain systems. USDA warehouse capacity is useful for scale, but it does not provide one stable denominator for the whole chain without narrowing the profile to storage only [2, 3].
 
 ## References
 

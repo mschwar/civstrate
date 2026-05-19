@@ -11,7 +11,7 @@ This repository is the working research and data scaffold for a source-disciplin
 - `python scripts/compile_profiles.py --check` confirms the checked-in CSV is current.
 - `research/profiles/` contains **24** technology profiles, all marked `status: qa_passed`.
 - `data/processed/substrates_master.csv` contains **24** compiled rows and matches the compiler output.
-- Diffusion milestone coverage is now **10/24 complete**, with **6/24 explicitly deferred** because no stable single national threshold series is currently defensible.
+- Diffusion milestone coverage is now **10/24 complete**, with **10/24 explicitly deferred** and **1/24 partially backfilled** because some higher thresholds are not reached in the chosen series.
 - Starter prompts for the four domain agents plus QA are present in `research/prompts/`.
 - The canonical schema, standards memo, runbook, and profile template are all in place.
 - A minimal GitHub Actions validation workflow exists and mirrors the local validation command.
@@ -41,7 +41,7 @@ This repository is the working research and data scaffold for a source-disciplin
 
 ## Known Risks
 
-- Diffusion milestone backfilling remains incomplete for 8 profiles, with 6 additional profiles intentionally deferred pending better series or a narrower metric definition.
+- Diffusion milestone backfilling remains incomplete for 3 profiles, with 10 additional profiles intentionally deferred and 1 partially backfilled pending better series, observed threshold crossings, or a narrower metric definition.
 - Dependency chains still need periodic historical review as new profiles are added.
 - The repo has a strong validation spine but no broader automated test suite yet.
 - Hard and soft substrate adoption metrics remain methodologically different and should not be collapsed casually.
