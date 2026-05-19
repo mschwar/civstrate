@@ -20,7 +20,7 @@ t50_years:
 t75_years:
 peak_adoption_or_current_status: Core coordination substrate for outbreak detection, immunization targeting, public-health response, and routine epidemiological monitoring.
 confidence: medium
-notes: Centers recurring surveillance infrastructure rather than one publication title such as MMWR; 1925 remains the milestone when all states were reporting regularly. Tier 1 diffusion attempt deferred because no single national population-coverage series runs cleanly from the 1878-1893 launch era through the mature notifiable-disease system.
+notes: Centers recurring surveillance infrastructure rather than one publication title such as MMWR; 1925 remains the milestone when all states were reporting regularly. Diffusion milestones are explicitly deferred because the available national series track reporting jurisdictions, reportable-disease lists, publication continuity, or state participation rather than a stable population-denominator coverage percentage from the 1893 launch era through T10-T75.
 ```
 
 # Public Health Surveillance
@@ -60,13 +60,13 @@ notes: Centers recurring surveillance infrastructure rather than one publication
 
 ## Diffusion Milestones
 
-- `T10`:
-- `T25`:
-- `T50`:
-- `T75`:
+- `T10`: deferred.
+- `T25`: deferred.
+- `T50`: deferred.
+- `T75`: deferred.
 - `Peak Adoption / Current Status`: Core coordination substrate for outbreak detection, immunization targeting, public-health response, and routine epidemiological monitoring.
 
-Leave these blank when evidence is not yet strong enough.
+Milestones remain blank because the best-documented historical progression is institutional participation, including the 1925 point when all states were reporting regularly, not a continuous national population-coverage percentage suitable for first-crossing thresholds [1, 2, 3].
 
 ## References
 

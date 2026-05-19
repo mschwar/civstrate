@@ -20,7 +20,7 @@ t50_years:
 t75_years:
 peak_adoption_or_current_status: Core care-delivery substrate for inpatient acute medicine, trauma, surgery, and advanced diagnostics, though bed intensity and organizational form have shifted over time.
 confidence: medium
-notes: This row is intentionally scoped to the post-1946 modern hospital network and not to earlier almshouses, charitable hospitals, or one-off specialty institutions. Tier 1 diffusion attempt deferred because hospital-capacity series shift across bed definitions, community-hospital scope, and system consolidation, making one clean national threshold run unstable.
+notes: This row is intentionally scoped to the post-1946 modern hospital network and not to earlier almshouses, charitable hospitals, or one-off specialty institutions. Diffusion milestones are explicitly deferred because the available national series use changing units and boundaries, including Hill-Burton construction approvals, community-hospital bed counts per 1,000 population, admissions, staffed beds, and later system-consolidation measures, so no single population-denominator threshold series is stable across T10-T75.
 ```
 
 # Modern Hospital Systems
@@ -60,13 +60,13 @@ notes: This row is intentionally scoped to the post-1946 modern hospital network
 
 ## Diffusion Milestones
 
-- `T10`:
-- `T25`:
-- `T50`:
-- `T75`:
+- `T10`: deferred.
+- `T25`: deferred.
+- `T50`: deferred.
+- `T75`: deferred.
 - `Peak Adoption / Current Status`: Core care-delivery substrate for inpatient acute medicine, trauma, surgery, and advanced diagnostics, though bed intensity and organizational form have shifted over time.
 
-Leave these blank when evidence is not yet strong enough.
+Milestones remain blank because the candidate national series do not provide one stable population-denominator threshold run for the post-1946 hospital-system substrate. Hill-Burton captures federal construction support, community-hospital beds per 1,000 population captures capacity, admissions capture utilization, and staffed-bed series capture later operating capacity; mixing them would violate the single-source rule [1, 2, 4].
 
 ## References
 
