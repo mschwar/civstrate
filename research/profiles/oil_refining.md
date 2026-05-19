@@ -65,7 +65,7 @@ notes: Kier-era invention boundary retained; the repo may later split kerosene-e
 - `T75`: deferred.
 - `Peak Adoption / Current Status`: Still foundational to transport fuels, petrochemicals, and military logistics despite energy-transition pressures.
 
-Milestones remain blank because the recommended metric is refining capacity in barrels per day. Capacity is appropriate for measuring industrial scale, but it does not supply a stable denominator for 10/25/50/75 percent adoption thresholds across kerosene-era, gasoline-era, petrochemical, and modern transport-fuel refining without imposing an arbitrary peak-capacity denominator [1, 2].
+Milestones are explicitly deferred because the recommended metric is refining capacity in barrels per day. Capacity is appropriate for measuring industrial scale, but it does not supply a stable denominator for 10/25/50/75 percent adoption thresholds across kerosene-era, gasoline-era, petrochemical, and modern transport-fuel refining without imposing an arbitrary peak-capacity denominator [1, 2].
 
 ## References
 

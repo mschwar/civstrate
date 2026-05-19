@@ -66,7 +66,7 @@ notes: Uses 1875 because it is the stronger commercial-quality boundary; the row
 - `T75`: deferred.
 - `Peak Adoption / Current Status`: One of the deepest physical substrates in the built environment, embedded in buildings, roads, utilities, dams, and industrial sites.
 
-Milestones remain blank because the profile is scoped to the portland-cement concrete material system, not merely the replacement of natural cement by portland cement. USGS cement data support production and consumption histories, but consumption volume rises and falls with construction cycles and does not define a stable saturation denominator for first-crossing adoption thresholds [2].
+Milestones are explicitly deferred because the profile is scoped to the portland-cement concrete material system, not merely the replacement of natural cement by portland cement. USGS cement data support production and consumption histories, but consumption volume rises and falls with construction cycles and does not define a stable saturation denominator for first-crossing adoption thresholds [2].
 
 ## References
 

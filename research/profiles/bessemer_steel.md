@@ -66,7 +66,7 @@ notes: 1864 versus 1865 remains a minor normalization question for U.S. launch. 
 - `T75`: deferred.
 - `Peak Adoption / Current Status`: The Bessemer process itself was superseded, but low-cost steel remained a permanent civilizational substrate.
 
-Milestones remain blank under the supersession rule. The Bessemer process was historically important as the first bulk low-cost steel process, but it was later outstripped by open-hearth steelmaking and then by later steel processes, so a single stable adoption denominator would conflate a process diffusion curve with the broader steel substrate it enabled [1, 3].
+Milestones are explicitly deferred under the supersession rule. The Bessemer process was historically important as the first bulk low-cost steel process, but it was later outstripped by open-hearth steelmaking and then by later steel processes, so a single stable adoption denominator would conflate a process diffusion curve with the broader steel substrate it enabled [1, 3].
 
 ## References
 
