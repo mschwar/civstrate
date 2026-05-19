@@ -14,13 +14,13 @@ us_commercial_launch_defense: 1920 is the clearest U.S. commercial launch year b
 fundamental_scaling_metric: Cost per listener-hour delivered.
 recommended_us_adoption_metric: Share of U.S. households with a radio receiver.
 denominator: Households
-t10_years:
-t25_years:
-t50_years:
-t75_years:
+t10_years: 5
+t25_years: 10
+t50_years: 15
+t75_years: 20
 peak_adoption_or_current_status: Radio remains a durable mass-audience and emergency-information substrate even after television, internet, and mobile media displaced its peak centrality.
 confidence: medium
-notes: This row is scoped to broadcast radio as a mass communication substrate, not to wireless telegraphy or later two-way mobile radio systems. Tier 1 diffusion attempt deferred pending normalization of one reproducible national household-radio-ownership table from Historical Statistics and Census sources into exact threshold years.
+notes: This row is scoped to broadcast radio as a mass communication substrate, not to wireless telegraphy or later two-way mobile radio systems. Diffusion milestones use the percentage of all U.S. households with radio sets from Historical Statistics-derived household ownership tables: 10.1 percent in 1925, 45.8 percent in 1930, 67.3 percent in 1935, and 81.1 percent in 1940.
 ```
 
 # Radio
@@ -60,13 +60,13 @@ notes: This row is scoped to broadcast radio as a mass communication substrate, 
 
 ## Diffusion Milestones
 
-- `T10`:
-- `T25`:
-- `T50`:
-- `T75`:
+- `T10`: 5 years after T0, using 1925 as the first observed year at or above 10 percent household radio ownership [4, 5].
+- `T25`: 10 years after T0, using 1930 as the first observed year at or above 25 percent household radio ownership [4, 5].
+- `T50`: 15 years after T0, using 1935 as the first observed year at or above 50 percent household radio ownership [4, 5].
+- `T75`: 20 years after T0, using 1940 as the first observed year at or above 75 percent household radio ownership [4, 5].
 - `Peak Adoption / Current Status`: Radio remains a durable mass-audience and emergency-information substrate even after television, internet, and mobile media displaced its peak centrality.
 
-Leave these blank when evidence is not yet strong enough.
+Milestones use first observed threshold crossings in a Historical Statistics-derived household receiver ownership series rather than interpolated annual crossings.
 
 ## References
 
@@ -76,6 +76,7 @@ Use numbered citations inline in the sections above, for example `[1]` or `[2, 3
 - [2] Encyclopaedia Britannica. "Reginald Aubrey Fessenden." https://www.britannica.com/biography/Reginald-Aubrey-Fessenden
 - [3] Federal Communications Commission. Statement of Chairman Ajit Pai, MB Docket No. 17-106. https://docs.fcc.gov/public/attachments/DOC-344947A2.pdf
 - [4] U.S. Census Bureau. *Historical Statistics of the United States, Colonial Times to 1957*, chapter R. https://www2.census.gov/library/publications/1960/compendia/hist_stats_colonial-1957/hist_stats_colonial-1957-chR.pdf
+- [5] Digital History. "The American Economy During the 1920s: Number of Radios." Source table derived from U.S. Census Bureau, *Historical Statistics of the United States, Colonial Times to 1970*. https://www.digitalhistory.uh.edu/disp_textbook_print.cfm?psid=4607&smtid=11
 
 ## Open Questions
 

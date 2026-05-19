@@ -20,7 +20,7 @@ t50_years:
 t75_years:
 peak_adoption_or_current_status: Core public-health substrate and baseline expectation for municipal drinking water in the modern United States.
 confidence: medium
-notes: Earlier filtration-only milestones remain important precursors, but 1908 is used to represent the modern U.S. treated-water regime centered on routine disinfection. Tier 1 diffusion attempt deferred because the strongest national series mix filtration, chlorination, and community-water coverage without one continuous treated-population threshold series.
+notes: Earlier filtration-only milestones remain important precursors, but 1908 is used to represent the modern U.S. treated-water regime centered on routine disinfection. Diffusion milestones are explicitly deferred because the strongest national series mix filtration, chlorination, public-water-system coverage, and later regulatory compliance, without one continuous treated-population threshold series for the combined filtration-plus-chlorination substrate.
 ```
 
 # Water Filtration and Chlorination
@@ -60,13 +60,13 @@ notes: Earlier filtration-only milestones remain important precursors, but 1908 
 
 ## Diffusion Milestones
 
-- `T10`:
-- `T25`:
-- `T50`:
-- `T75`:
+- `T10`: deferred.
+- `T25`: deferred.
+- `T50`: deferred.
+- `T75`: deferred.
 - `Peak Adoption / Current Status`: Core public-health substrate and baseline expectation for municipal drinking water in the modern United States.
 
-Leave these blank when evidence is not yet strong enough.
+Milestones remain blank because the profile intentionally combines filtration and chlorination. Available source narratives and regulatory histories identify the Jersey City launch and broad later community-water-system coverage, but they do not provide one continuous national percentage of the population served by both filtered and disinfected water from 1908 through all four thresholds [1, 2, 3].
 
 ## References
 
